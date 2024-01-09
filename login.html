@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>로그인 : 마이 리얼 트립</title>
+        <meta name="description" content="html5의 구조를 설명" />
+        <meta name="keywords" content="html5의 구조" />
+        <meta name="author" content="홍길동" />
+
+        <meta property="og:url" content="사이트url" />
+        <meta property="og:title" content="제목" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="이미지경로" />
+        <meta property="og:description" content="간단설명" />
+        <link rel="shortcut icon" href="images/main-login/favicon.png" />
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css" />
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/common.css" />
+        <link rel="stylesheet" href="css/main.css" />
+        <link rel="stylesheet" href="css/login.css" />
+    </head>
+    <body>
+        <!-- div#wrap>header#header>div.inner^section#visual+main#container.main>section#content>div.con-box.con$*4>div.inner>h2{타이틀$}^^^^footer#footer>div.inner>h2{로고} -->
+        <p id="skipNav"><a href="#">본문바로가기</a></p>
+        <div id="wrap">
+            <!-- header -->
+            <header id="header"></header>
+
+            <section id="login-visual"></section>
+
+            <main id="container" class="main">
+                <section id="content">
+                   <div class="id">
+                    <h2>LOGIN</h2>
+                    <form action="">
+                        <table>
+                            <tbody>
+                                <tr class="name">
+                                    <td><input type="text" placeholder="이름을 입력하세요" class="w400"></td>
+                                </tr>
+                                <tr class="name">
+                                    <td><input type="text" placeholder="가입시 등록하신 이메일을 입력하세요" class="w400"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="pack-all">
+                        <div class="lo">
+                            <a href="index.html" class="id1">로그인</a><br>
+                        </div>
+                        <div class="jo">
+                            <button onclick="kkhj()" class="id2">회원가입</button>
+                        </div>
+                    </div>
+
+                    <div class="sub">
+                        <ul>
+                            <li><a href="#">아이디 찾기</a></li>
+                            <li><a href="#">비밀번호 찾기</a></li>
+                        </ul>
+                    </div>
+                    <div class="hj">
+                        <a href="#" class="k1"><img src="images/main-login/pngegg.png" alt="kaka">카카오톡으로 로그인하기</a>
+
+                    <!-- <p class="k1"><img src="./images/pngegg.png" alt=""><input type="submit" value="카카오 계정으로 로그인하기" class="ka"  ><i class="xi-angle-right-thin"></i></p> -->
+                </div>
+                </form>
+                   </div>
+                </section>
+            </main>
+        
+
+            <!-- footer -->
+            <footer id="footer"></footer>
+        </div>
+
+        <script src="js/common.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/login.js"></script>
+    </body>
+</html>

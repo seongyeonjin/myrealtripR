@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>투어/티켓: 마이 리얼 트립</title>
+    <meta name="description" content="html5의 구조를 설명"> 
+    <meta name="keywords" content="html5의 구조">
+    <meta name="author" content="홍길동"> 
+    
+    <meta property="og:url" content="사이트url">
+    <meta property="og:title" content="제목">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="이미지경로">
+    <meta property="og:description" content="간단설명">
+    <link rel="shortcut icon" href="images/favicon.png" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/sub.css">
+</head>
+<body>
+    
+    <!-- div#wrap>header#header>div.inner^section#visual+main#container.main>section#content>div.con-box.con$*4>div.inner>h2{타이틀$}^^^^footer#footer>div.inner>h2{로고} -->
+    <p id="skipNav"><a href="#">본문바로가기</a></p>
+    <div id="wrap">
+        
+        <!-- header -->
+        <header id="header"></header>
+
+        <section id="tour-subVisual" class="tour-vis">
+            <div class="tour-vis-bg"></div>
+            <div class="tour-vis-box"></div>
+            <div class="inner">
+                <div class="tour-vis-input">
+                    <ul>
+                        <li class="destination"><span>여행지</span><p>여행지나 숙소명을 입력하세요</p></li>
+                        <li>
+                            <span>일정</span>
+                            <p>
+                                <label for="tour-date"></label>
+                                <input type="date" name="tour-date" id="tour-date">
+                            </p>
+                        </li>
+                        <li>
+                            <span>인원</span>
+                            <p>성인 <span class="tcnt">2</span>명</p></li>
+                        <li><button>검색</button></li>
+                    </ul>
+            
+                </div>
+                <!-- 팝업 -->
+                <div class="bg"></div>
+                <div class="tour-inp-popup">
+                    <div class="inp-header">
+                        <div class="inp-search">
+                            <p><i class="xi-search"></i></p>
+                            <p class="txt">
+                                <label for="travel-search"></label>
+                                <input type="text" id="travel-search" title="travel-search" placeholder=" 여행지나 숙소명 검색">
+                            </p>
+                            <p class="close"><i class="xi-close"></i></p>
+                        </div>          
+                    </div>
+                    <div class="nation">
+                        <h4>지역</h4>
+                        <ul class="nation-list">
+                            <li>
+                                <span><i class="xi-maker"></i></span>
+                                <div>
+                                    <p>도쿄</p>
+                                    <span>일본,도쿄</span>
+                                </div>
+                            </li>
+                            <li>
+                                <span><i class="xi-maker"></i></span>
+                                <div>
+                                    <p>후쿠오카</p>
+                                    <span>일본,후쿠오카</span>
+                                </div>
+                            </li>
+                            <li>
+                                <span><i class="xi-maker"></i></span>
+                                <div>
+                                    <p>삿포로</p>
+                                    <span>일본,삿포로</span>
+                                </div>
+                            </li>
+                            <li>
+                                <span><i class="xi-maker"></i></span>
+                                <div>
+                                    <p>오사카</p>
+                                    <span>일본,오사카</span>
+                                </div>
+                            </li>
+                            <li>
+                                <span><i class="xi-maker"></i></span>
+                                <div>
+                                    <p>베이징</p>
+                                    <span>중국,베이징</span>
+                                </div>
+                            </li>
+                            <li>
+                                <span><i class="xi-maker"></i></span>
+                                <div>
+                                    <p>뉴욕</p>
+                                    <span>미국,뉴욕</span>
+                                </div>
+                            </li>
+                            <li>
+                                <span><i class="xi-maker"></i></span>
+                                <div>
+                                    <p>로스앤젤레스</p>
+                                    <span>미국,로스엔젤레스</span>
+                                </div>
+                            </li>
+                            <li>
+                                <span><i class="xi-maker"></i></span>
+                                <div>
+                                    <p>런던</p>
+                                    <span>영국,런던</span>
+                                </div>
+                            </li>
+                            <li>
+                                <span><i class="xi-maker"></i></span>
+                                <div>
+                                    <p>파리</p>
+                                    <span>프랑스,파리</span>
+                                </div>
+                            </li>
+                            <li>
+                                <span><i class="xi-maker"></i></span>
+                                <div>
+                                    <p>파리</p>
+                                    <span>프랑스,파리</span>
+                                </div>
+                            </li>
+                            <li>
+                                <span><i class="xi-maker"></i></span>
+                                <div>
+                                    <p>바르셀로나</p>
+                                    <span>스페인,바르셀로나</span>
+                                </div>
+                            </li>
+                            <li>
+                                <span><i class="xi-maker"></i></span>
+                                <div>
+                                    <p>로마</p>
+                                    <span>이탈리아,로마</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="inp-body">          
+                        <p><span>일치하는 검색어가 없습니다</span>다른 검색어로 검색해보세요</p>
+                    </div>   
+                    <p class="esc">
+                        <button>닫기</button>
+                    </p>
+                </div>
+                <!-- 인원 수 추가 팝업 -->
+                <div class="bg2"></div>
+                <div class="person-popup">
+                    <div class="person-counting">
+                        <strong>성인</strong>
+                        <div class="counting">
+                            <i class="xi-minus-min minus"></i>
+                            <p class="text">2</p>
+                            <i class="xi-plus-min plus"></i>
+                        </div>
+                        <p class="enter">
+                            <button>확인</button>
+                        </p>
+                    </div>
+                </div>
+            </div>
+       </section>
+
+        <main id="tour-container" class="tour-sub4">
+            <section id="tour-content">
+                <div class="tour-content-box con1">
+                    <div class="inner">
+                        <h3>초특가 모음전: 여행자가 많이 찾은 여행지 🏰</h3>
+                        <ul class="tour-list">
+                            <div class="slider-list">
+                                <li>
+                                    <a href="tour_ticket_detail.html">
+                                    <img src="images/wonderbox/woderboxmain.jpg" alt="포르투갈_배경">
+                                    <div class="list-box">
+                                        <span>티켓/투어</span>
+                                        <strong>[인천 중구] 파라다이스시티 원더박스 입장권</strong>
+                                        <p>23,800원~</p>
+                                    </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <img src="images/tour/tour0.png" alt="오스트리아_배경">
+                                    <div class="list-box">
+                                        <span>티켓/투어</span>
+                                        <strong>[서울 잠실]롯데월드타워 전망대 | 서울스카이 할인 입장권</strong>
+                                        <p>28,900원~</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="images/tour/tour1.png" alt="벨기에_배경">
+                                    <div class="list-box">
+                                        <span>가이드투어</span>
+                                        <strong>[미국 괌]괌 오션파크 웨이크보드</strong>
+                                        <p>98,000원~</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="images/tour/tour2.png" alt="다낭_배경">
+                                    <div class="list-box">
+                                        <span>가이드투어</span>
+                                        <strong>[독일]노이슈반슈타인 성 입장권 (랜덤 입장)</strong>
+                                        <p>37,000원~~</p>
+                                    </div>
+                                </li>
+                            </div>
+                            <div class="slider-list">
+                                <li>
+                                    <img src="images/tour/tour3.png" alt="포르투갈_배경">
+                                    <div class="list-box">
+                                        <span>패키지</span>
+                                        <strong>스페인/포르투갈 9,10,11일 #루프탑 레스토랑 #시내호텔1박</strong>
+                                        <p>3,599,000원~</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="images/tour/tour4.png" alt="오스트리아_배경">
+                                    <div class="list-box">
+                                        <span>패키지</span>
+                                        <strong>스페인/포르투갈 9,10,11일 #루프탑 레스토랑 #시내호텔1박</strong>
+                                        <p>3,599,000원~</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="images/tour/tour5.png" alt="벨기에_배경">
+                                    <div class="list-box">
+                                        <span>패키지</span>
+                                        <strong>스페인/포르투갈 9,10,11일 #루프탑 레스토랑 #시내호텔1박</strong>
+                                        <p>3,599,000원~</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="images/tour/tour6.png" alt="다낭_배경">
+                                    <div class="list-box">
+                                        <span>패키지</span>
+                                        <strong>스페인/포르투갈 9,10,11일 #루프탑 레스토랑 #시내호텔1박</strong>
+                                        <p>3,599,000원~</p>
+                                    </div>
+                                </li>
+                            </div>
+                            <div class="slider-list">
+                                <li>
+                                    <img src="images/tour/tour6.png" alt="다낭_배경">
+                                    <div class="list-box">
+                                        <span>패키지</span>
+                                        <strong>스페인/포르투갈 9,10,11일 #루프탑 레스토랑 #시내호텔1박</strong>
+                                        <p>3,599,000원~</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="images/tour/tour8.png" alt="오스트리아_배경">
+                                    <div class="list-box">
+                                        <span>패키지</span>
+                                        <strong>스페인/포르투갈 9,10,11일 #루프탑 레스토랑 #시내호텔1박</strong>
+                                        <p>3,599,000원~</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="images/tour/tour9.png" alt="벨기에_배경">
+                                    <div class="list-box">
+                                        <span>패키지</span>
+                                        <strong>스페인/포르투갈 9,10,11일 #루프탑 레스토랑 #시내호텔1박</strong>
+                                        <p>3,599,000원~</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="images/tour/tour10.png" alt="다낭_배경">
+                                    <div class="list-box">
+                                        <span>패키지</span>
+                                        <strong>스페인/포르투갈 9,10,11일 #루프탑 레스토랑 #시내호텔1박</strong>
+                                        <p>3,599,000원~</p>
+                                    </div>
+                                </li>
+                            </div>
+                        </ul>
+                        <p class="tour-list-btn">
+                            <button class="prev"><i class="xi-angle-left-thin"></i></button>
+                            <button class="next"><i class="xi-angle-right-thin"></i></button>
+                        </p>
+                    </div>
+                </div>
+                <div class="tour-content-box con2">
+                    <div class="inner">
+                        <h3>마이리얼트립이 엄선한 유럽 투어🎆</h3>
+                        <ul class="tour-list">
+                            <div class="slider-list">
+                                <li>
+                                    <img src="images/tour/tour3.png" alt="포르투갈_배경">
+                                    <div class="list-box">
+                                        <span>패키지</span>
+                                        <strong>스페인/포르투갈 9,10,11일 #루프탑 레스토랑 #시내호텔1박</strong>
+                                        <p>3,599,000원~</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="images/tour/tour4.png" alt="오스트리아_배경">
+                                    <div class="list-box">
+                                        <span>패키지</span>
+                                        <strong>스페인/포르투갈 9,10,11일 #루프탑 레스토랑 #시내호텔1박</strong>
+                                        <p>3,599,000원~</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="images/tour/tour5.png" alt="벨기에_배경">
+                                    <div class="list-box">
+                                        <span>패키지</span>
+                                        <strong>스페인/포르투갈 9,10,11일 #루프탑 레스토랑 #시내호텔1박</strong>
+                                        <p>3,599,000원~</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="images/tour/tour6.png" alt="다낭_배경">
+                                    <div class="list-box">
+                                        <span>패키지</span>
+                                        <strong>스페인/포르투갈 9,10,11일 #루프탑 레스토랑 #시내호텔1박</strong>
+                                        <p>3,599,000원~</p>
+                                    </div>
+                                </li>
+                            </div>
+                            <div class="slider-list">
+                                <li>
+                                    <a href="tour_ticket_detail.html">
+                                    <img src="images/wonderbox/woderboxmain.jpg" alt="포르투갈_배경">
+                                    <div class="list-box">
+                                        <span>티켓/투어</span>
+                                        <strong>[인천 중구] 파라다이스시티 원더박스 입장권</strong>
+                                        <p>23,800원~</p>
+                                    </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <img src="images/tour/tour0.png" alt="오스트리아_배경">
+                                    <div class="list-box">
+                                        <span>티켓/투어</span>
+                                        <strong>[서울 잠실]롯데월드타워 전망대 | 서울스카이 할인 입장권</strong>
+                                        <p>28,900원~</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="images/tour/tour1.png" alt="벨기에_배경">
+                                    <div class="list-box">
+                                        <span>가이드투어</span>
+                                        <strong>[미국 괌]괌 오션파크 웨이크보드</strong>
+                                        <p>98,000원~</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="images/tour/tour2.png" alt="다낭_배경">
+                                    <div class="list-box">
+                                        <span>가이드투어</span>
+                                        <strong>[독일]노이슈반슈타인 성 입장권 (랜덤 입장)</strong>
+                                        <p>37,000원~~</p>
+                                    </div>
+                                </li>
+                            </div>
+                            <div class="slider-list">
+                                <li>
+                                    <img src="images/tour/tour6.png" alt="다낭_배경">
+                                    <div class="list-box">
+                                        <span>패키지</span>
+                                        <strong>스페인/포르투갈 9,10,11일 #루프탑 레스토랑 #시내호텔1박</strong>
+                                        <p>3,599,000원~</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="images/tour/tour8.png" alt="오스트리아_배경">
+                                    <div class="list-box">
+                                        <span>패키지</span>
+                                        <strong>스페인/포르투갈 9,10,11일 #루프탑 레스토랑 #시내호텔1박</strong>
+                                        <p>3,599,000원~</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="images/tour/tour9.png" alt="벨기에_배경">
+                                    <div class="list-box">
+                                        <span>패키지</span>
+                                        <strong>스페인/포르투갈 9,10,11일 #루프탑 레스토랑 #시내호텔1박</strong>
+                                        <p>3,599,000원~</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="images/tour/tour10.png" alt="다낭_배경">
+                                    <div class="list-box">
+                                        <span>패키지</span>
+                                        <strong>스페인/포르투갈 9,10,11일 #루프탑 레스토랑 #시내호텔1박</strong>
+                                        <p>3,599,000원~</p>
+                                    </div>
+                                </li>
+                            </div>
+                        </ul>
+                        <p class="tour-list-btn">
+                            <button class="prev"><i class="xi-angle-left-thin"></i></button>
+                            <button class="next"><i class="xi-angle-right-thin"></i></button>
+                        </p>
+                    </div>
+                </div>
+                <div class="tour-content-box con3">
+                    <div class="inner">
+                        <h3>실시간 마감중인 일본 투어🚌</h3>
+                        <ul class="tour-list">
+                            <div class="slider-list">
+                                <li>
+                                    <a href="tour_ticket_detail.html">
+                                    <img src="images/tour/tour15.png" alt="포르투갈_배경">
+                                    <div class="list-box">
+                                        <span>티켓/투어</span>
+                                        <strong>[인천 중구] 파라다이스시티 원더박스 입장권</strong>
+                                        <p>23,800원~</p>
+                                    </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <img src="images/tour/tour16.png" alt="오스트리아_배경">
+                                    <div class="list-box">
+                                        <span>티켓/투어</span>
+                                        <strong>[서울 잠실]롯데월드타워 전망대 | 서울스카이 할인 입장권</strong>
+                                        <p>28,900원~</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="images/tour/tour17.png" alt="벨기에_배경">
+                                    <div class="list-box">
+                                        <span>가이드투어</span>
+                                        <strong>[미국 괌]괌 오션파크 웨이크보드</strong>
+                                        <p>98,000원~</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="images/tour/tour18.png" alt="다낭_배경">
+                                    <div class="list-box">
+                                        <span>가이드투어</span>
+                                        <strong>[독일]노이슈반슈타인 성 입장권 (랜덤 입장)</strong>
+                                        <p>37,000원~~</p>
+                                    </div>
+                                </li>
+                            </div>
+                            <div class="slider-list">
+                                <li>
+                                    <img src="images/tour/tour3.png" alt="포르투갈_배경">
+                                    <div class="list-box">
+                                        <span>패키지</span>
+                                        <strong>스페인/포르투갈 9,10,11일 #루프탑 레스토랑 #시내호텔1박</strong>
+                                        <p>3,599,000원~</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="images/tour/tour4.png" alt="오스트리아_배경">
+                                    <div class="list-box">
+                                        <span>패키지</span>
+                                        <strong>스페인/포르투갈 9,10,11일 #루프탑 레스토랑 #시내호텔1박</strong>
+                                        <p>3,599,000원~</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="images/tour/tour5.png" alt="벨기에_배경">
+                                    <div class="list-box">
+                                        <span>패키지</span>
+                                        <strong>스페인/포르투갈 9,10,11일 #루프탑 레스토랑 #시내호텔1박</strong>
+                                        <p>3,599,000원~</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="images/tour/tour6.png" alt="다낭_배경">
+                                    <div class="list-box">
+                                        <span>패키지</span>
+                                        <strong>스페인/포르투갈 9,10,11일 #루프탑 레스토랑 #시내호텔1박</strong>
+                                        <p>3,599,000원~</p>
+                                    </div>
+                                </li>
+                            </div>
+                            <div class="slider-list">
+                                <li>
+                                    <img src="images/tour/tour6.png" alt="다낭_배경">
+                                    <div class="list-box">
+                                        <span>패키지</span>
+                                        <strong>스페인/포르투갈 9,10,11일 #루프탑 레스토랑 #시내호텔1박</strong>
+                                        <p>3,599,000원~</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="images/tour/tour8.png" alt="오스트리아_배경">
+                                    <div class="list-box">
+                                        <span>패키지</span>
+                                        <strong>스페인/포르투갈 9,10,11일 #루프탑 레스토랑 #시내호텔1박</strong>
+                                        <p>3,599,000원~</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="images/tour/tour9.png" alt="벨기에_배경">
+                                    <div class="list-box">
+                                        <span>패키지</span>
+                                        <strong>스페인/포르투갈 9,10,11일 #루프탑 레스토랑 #시내호텔1박</strong>
+                                        <p>3,599,000원~</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="images/tour/tour10.png" alt="다낭_배경">
+                                    <div class="list-box">
+                                        <span>패키지</span>
+                                        <strong>스페인/포르투갈 9,10,11일 #루프탑 레스토랑 #시내호텔1박</strong>
+                                        <p>3,599,000원~</p>
+                                    </div>
+                                </li>
+                            </div>
+                        </ul>
+                        <p class="tour-list-btn">
+                            <button class="prev"><i class="xi-angle-left-thin"></i></button>
+                            <button class="next"><i class="xi-angle-right-thin"></i></button>
+                        </p>
+                    </div>
+                </div>
+                <div class="tour-content-box con4">
+                    <div class="inner">
+                        <h3>🏆여행자가 많이 찾은 TOP5</h3>
+                        <ul class="tour-list">
+                            <div class="slider-list">
+                                <li>
+                                    <a href="tour_ticket_detail.html">
+                                    <img src="images/tour/tour4.png" alt="포르투갈_배경">
+                                    <div class="list-box">
+                                        <span>티켓/투어</span>
+                                        <strong>[인천 중구] 파라다이스시티 원더박스 입장권</strong>
+                                        <p>23,800원~</p>
+                                    </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <img src="images/tour/tour7.png" alt="오스트리아_배경">
+                                    <div class="list-box">
+                                        <span>티켓/투어</span>
+                                        <strong>[서울 잠실]롯데월드타워 전망대 | 서울스카이 할인 입장권</strong>
+                                        <p>28,900원~</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="images/tour/tour10.png" alt="벨기에_배경">
+                                    <div class="list-box">
+                                        <span>가이드투어</span>
+                                        <strong>[미국 괌]괌 오션파크 웨이크보드</strong>
+                                        <p>98,000원~</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="images/tour/tour1.png" alt="다낭_배경">
+                                    <div class="list-box">
+                                        <span>가이드투어</span>
+                                        <strong>[독일]노이슈반슈타인 성 입장권 (랜덤 입장)</strong>
+                                        <p>37,000원~~</p>
+                                    </div>
+                                </li>
+                            </div>
+                            <div class="slider-list">
+                                <li>
+                                    <img src="images/tour/tour3.png" alt="포르투갈_배경">
+                                    <div class="list-box">
+                                        <span>패키지</span>
+                                        <strong>스페인/포르투갈 9,10,11일 #루프탑 레스토랑 #시내호텔1박</strong>
+                                        <p>3,599,000원~</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="images/tour/tour4.png" alt="오스트리아_배경">
+                                    <div class="list-box">
+                                        <span>패키지</span>
+                                        <strong>스페인/포르투갈 9,10,11일 #루프탑 레스토랑 #시내호텔1박</strong>
+                                        <p>3,599,000원~</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="images/tour/tour5.png" alt="벨기에_배경">
+                                    <div class="list-box">
+                                        <span>패키지</span>
+                                        <strong>스페인/포르투갈 9,10,11일 #루프탑 레스토랑 #시내호텔1박</strong>
+                                        <p>3,599,000원~</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="images/tour/tour6.png" alt="다낭_배경">
+                                    <div class="list-box">
+                                        <span>패키지</span>
+                                        <strong>스페인/포르투갈 9,10,11일 #루프탑 레스토랑 #시내호텔1박</strong>
+                                        <p>3,599,000원~</p>
+                                    </div>
+                                </li>
+                            </div>
+                            <div class="slider-list">
+                                <li>
+                                    <img src="images/tour/tour6.png" alt="다낭_배경">
+                                    <div class="list-box">
+                                        <span>패키지</span>
+                                        <strong>스페인/포르투갈 9,10,11일 #루프탑 레스토랑 #시내호텔1박</strong>
+                                        <p>3,599,000원~</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="images/tour/tour8.png" alt="오스트리아_배경">
+                                    <div class="list-box">
+                                        <span>패키지</span>
+                                        <strong>스페인/포르투갈 9,10,11일 #루프탑 레스토랑 #시내호텔1박</strong>
+                                        <p>3,599,000원~</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="images/tour/tour9.png" alt="벨기에_배경">
+                                    <div class="list-box">
+                                        <span>패키지</span>
+                                        <strong>스페인/포르투갈 9,10,11일 #루프탑 레스토랑 #시내호텔1박</strong>
+                                        <p>3,599,000원~</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="images/tour/tour10.png" alt="다낭_배경">
+                                    <div class="list-box">
+                                        <span>패키지</span>
+                                        <strong>스페인/포르투갈 9,10,11일 #루프탑 레스토랑 #시내호텔1박</strong>
+                                        <p>3,599,000원~</p>
+                                    </div>
+                                </li>
+                            </div>
+                        </ul>
+                        <p class="tour-list-btn">
+                            <button class="prev"><i class="xi-angle-left-thin"></i></button>
+                            <button class="next"><i class="xi-angle-right-thin"></i></button>
+                        </p>
+                    </div>
+                </div>
+                <div class="tour-content-box con5">
+                    <div class="inner">
+                        <h3>📷꽃의 도시 스냅촬영</h3>
+                        <ul class="tour-list">
+                            <div class="slider-list">
+                                <li>
+                                    <a href="tour_ticket_detail.html">
+                                    <img src="images/tour/tour17.png" alt="포르투갈_배경">
+                                    <div class="list-box">
+                                        <span>티켓/투어</span>
+                                        <strong>[인천 중구] 파라다이스시티 원더박스 입장권</strong>
+                                        <p>23,800원~</p>
+                                    </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <img src="images/tour/tour18.png" alt="오스트리아_배경">
+                                    <div class="list-box">
+                                        <span>티켓/투어</span>
+                                        <strong>[서울 잠실]롯데월드타워 전망대 | 서울스카이 할인 입장권</strong>
+                                        <p>28,900원~</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="images/tour/tour19.png" alt="벨기에_배경">
+                                    <div class="list-box">
+                                        <span>가이드투어</span>
+                                        <strong>[미국 괌]괌 오션파크 웨이크보드</strong>
+                                        <p>98,000원~</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="images/tour/tour20.png" alt="다낭_배경">
+                                    <div class="list-box">
+                                        <span>가이드투어</span>
+                                        <strong>[독일]노이슈반슈타인 성 입장권 (랜덤 입장)</strong>
+                                        <p>37,000원~~</p>
+                                    </div>
+                                </li>
+                            </div>
+                            <div class="slider-list">
+                                <li>
+                                    <img src="images/tour/tour21.png" alt="포르투갈_배경">
+                                    <div class="list-box">
+                                        <span>패키지</span>
+                                        <strong>스페인/포르투갈 9,10,11일 #루프탑 레스토랑 #시내호텔1박</strong>
+                                        <p>3,599,000원~</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="images/tour/tour22.png" alt="오스트리아_배경">
+                                    <div class="list-box">
+                                        <span>패키지</span>
+                                        <strong>스페인/포르투갈 9,10,11일 #루프탑 레스토랑 #시내호텔1박</strong>
+                                        <p>3,599,000원~</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="images/tour/tour5.png" alt="벨기에_배경">
+                                    <div class="list-box">
+                                        <span>패키지</span>
+                                        <strong>스페인/포르투갈 9,10,11일 #루프탑 레스토랑 #시내호텔1박</strong>
+                                        <p>3,599,000원~</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="images/tour/tour6.png" alt="다낭_배경">
+                                    <div class="list-box">
+                                        <span>패키지</span>
+                                        <strong>스페인/포르투갈 9,10,11일 #루프탑 레스토랑 #시내호텔1박</strong>
+                                        <p>3,599,000원~</p>
+                                    </div>
+                                </li>
+                            </div>
+                            <div class="slider-list">
+                                <li>
+                                    <img src="images/tour/tour6.png" alt="다낭_배경">
+                                    <div class="list-box">
+                                        <span>패키지</span>
+                                        <strong>스페인/포르투갈 9,10,11일 #루프탑 레스토랑 #시내호텔1박</strong>
+                                        <p>3,599,000원~</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="images/tour/tour8.png" alt="오스트리아_배경">
+                                    <div class="list-box">
+                                        <span>패키지</span>
+                                        <strong>스페인/포르투갈 9,10,11일 #루프탑 레스토랑 #시내호텔1박</strong>
+                                        <p>3,599,000원~</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="images/tour/tour9.png" alt="벨기에_배경">
+                                    <div class="list-box">
+                                        <span>패키지</span>
+                                        <strong>스페인/포르투갈 9,10,11일 #루프탑 레스토랑 #시내호텔1박</strong>
+                                        <p>3,599,000원~</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="images/tour/tour10.png" alt="다낭_배경">
+                                    <div class="list-box">
+                                        <span>패키지</span>
+                                        <strong>스페인/포르투갈 9,10,11일 #루프탑 레스토랑 #시내호텔1박</strong>
+                                        <p>3,599,000원~</p>
+                                    </div>
+                                </li>
+                            </div>
+                        </ul>
+                        <p class="tour-list-btn">
+                            <button class="prev"><i class="xi-angle-left-thin"></i></button>
+                            <button class="next"><i class="xi-angle-right-thin"></i></button>
+                        </p>
+                    </div>
+                </div>
+                <div class="tour-content-box con6">
+                    <div class="inner">
+                        <h3>따뜻한 여행을 원한다면</h3>
+                        <ul class="tour-list">
+                            <div class="slider-list">
+                                <li>
+                                    <a href="tour_ticket_detail.html">
+                                    <img src="images/tour/tour10.png" alt="포르투갈_배경">
+                                    <div class="list-box">
+                                        <span>티켓/투어</span>
+                                        <strong>[인천 중구] 파라다이스시티 원더박스 입장권</strong>
+                                        <p>23,800원~</p>
+                                    </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <img src="images/tour/tour11.png" alt="오스트리아_배경">
+                                    <div class="list-box">
+                                        <span>티켓/투어</span>
+                                        <strong>[서울 잠실]롯데월드타워 전망대 | 서울스카이 할인 입장권</strong>
+                                        <p>28,900원~</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="images/tour/tour12.png" alt="벨기에_배경">
+                                    <div class="list-box">
+                                        <span>가이드투어</span>
+                                        <strong>[미국 괌]괌 오션파크 웨이크보드</strong>
+                                        <p>98,000원~</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="images/tour/tour13.png" alt="다낭_배경">
+                                    <div class="list-box">
+                                        <span>가이드투어</span>
+                                        <strong>[독일]노이슈반슈타인 성 입장권 (랜덤 입장)</strong>
+                                        <p>37,000원~~</p>
+                                    </div>
+                                </li>
+                            </div>
+                            <div class="slider-list">
+                                <li>
+                                    <img src="images/tour/tour14.png" alt="포르투갈_배경">
+                                    <div class="list-box">
+                                        <span>패키지</span>
+                                        <strong>스페인/포르투갈 9,10,11일 #루프탑 레스토랑 #시내호텔1박</strong>
+                                        <p>3,599,000원~</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="images/tour/tour15.png" alt="오스트리아_배경">
+                                    <div class="list-box">
+                                        <span>패키지</span>
+                                        <strong>스페인/포르투갈 9,10,11일 #루프탑 레스토랑 #시내호텔1박</strong>
+                                        <p>3,599,000원~</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="images/tour/tour16.png" alt="벨기에_배경">
+                                    <div class="list-box">
+                                        <span>패키지</span>
+                                        <strong>스페인/포르투갈 9,10,11일 #루프탑 레스토랑 #시내호텔1박</strong>
+                                        <p>3,599,000원~</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="images/tour/tour6.png" alt="다낭_배경">
+                                    <div class="list-box">
+                                        <span>패키지</span>
+                                        <strong>스페인/포르투갈 9,10,11일 #루프탑 레스토랑 #시내호텔1박</strong>
+                                        <p>3,599,000원~</p>
+                                    </div>
+                                </li>
+                            </div>
+                            <div class="slider-list">
+                                <li>
+                                    <img src="images/tour/tour6.png" alt="다낭_배경">
+                                    <div class="list-box">
+                                        <span>패키지</span>
+                                        <strong>스페인/포르투갈 9,10,11일 #루프탑 레스토랑 #시내호텔1박</strong>
+                                        <p>3,599,000원~</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="images/tour/tour8.png" alt="오스트리아_배경">
+                                    <div class="list-box">
+                                        <span>패키지</span>
+                                        <strong>스페인/포르투갈 9,10,11일 #루프탑 레스토랑 #시내호텔1박</strong>
+                                        <p>3,599,000원~</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="images/tour/tour9.png" alt="벨기에_배경">
+                                    <div class="list-box">
+                                        <span>패키지</span>
+                                        <strong>스페인/포르투갈 9,10,11일 #루프탑 레스토랑 #시내호텔1박</strong>
+                                        <p>3,599,000원~</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="images/tour/tour10.png" alt="다낭_배경">
+                                    <div class="list-box">
+                                        <span>패키지</span>
+                                        <strong>스페인/포르투갈 9,10,11일 #루프탑 레스토랑 #시내호텔1박</strong>
+                                        <p>3,599,000원~</p>
+                                    </div>
+                                </li>
+                            </div>
+                        </ul>
+                        <p class="tour-list-btn">
+                            <button class="prev"><i class="xi-angle-left-thin"></i></button>
+                            <button class="next"><i class="xi-angle-right-thin"></i></button>
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </main>
+       
+        <!-- footer -->
+        <footer id="footer"></footer>
+    </div>
+
+    <script src="js/common.js"></script>
+    <script src="js/tour_sub4.js"></script>
+     
+</body>
+</html>

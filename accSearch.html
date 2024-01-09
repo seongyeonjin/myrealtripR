@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>숙소:마이 리얼 트립</title>
+    <meta name="description" content="html5의 구조를 설명"> 
+    <meta name="keywords" content="html5의 구조">
+    <meta name="author" content="홍길동"> 
+    
+    <meta property="og:url" content="사이트url">
+    <meta property="og:title" content="제목">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="이미지경로">
+    <meta property="og:description" content="간단설명">
+    <link rel="shortcut icon" href="images/favicon.png" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/sub.css">
+    <!-- <link rel="stylesheet" href="css/accom.css"> -->
+    <link rel="stylesheet" href="css/acc_search.css">
+</head>
+<body >    
+ 
+    <p id="skipNav"><a href="#">본문바로가기</a></p>
+    <div id="wrap">
+
+         <!-- header -->
+         <header id="header"></header>
+
+         <section id="acc-ser-Visual" class="acc-vis">
+            <div class="acc-banner">
+                <div class="inner">
+                    <div class="acc-input">
+                        <ul>
+                            <li class="acc-dest">
+                                <h4>여행지</h4>
+                                <p>
+                                    <label for="acc-nation"></label>
+                                    <input type="text" name="acc-nation" id="acc-nation">
+                                </p>
+                            </li>
+                            <li class="acc-date-select">
+                                <h4>일정</h4>
+                                <p>
+                                    <label for="d-sel"></label>
+                                    <input type="date" name="d-sel" id="d-sel"> - 
+                                    <label for="dete-hippen"></label>
+                                    <input type="date" name="date-hippen" id="date-hippen">
+                                </p>
+                            </li>
+                            <li>
+                                <h4>숙박인원</h4>     
+                                <p>성인2명</p>     
+                            </li>
+                        </ul>
+                        <button type="button" class="acc-blackBtn">숙소 검색</button>
+                    </div>
+                    <!-- 인원 팝업 -->
+                    <div class="bg2"></div>
+                    <div class="person-popup">
+                        <div class="person-counting">
+                            <strong>성인</strong>
+                            <div class="counting">
+                                <i class="xi-minus-min minus"></i>
+                                <p class="text">2</p>
+                                <i class="xi-plus-min plus"></i>
+                            </div>
+                            <p class="enter">
+                                <button>확인</button>
+                            </p>
+                        </div>
+                    </div>
+                </div>       
+            </div>
+        </section>
+
+        <main id="container" class="acc-search">
+            <section id="content">
+                                     
+                <!-- <div class="acc-banner">
+                  
+                    <div class="visual">
+   
+                        <a href="none">
+                            <img src="">
+                        </a>
+                    </div>
+                    <div class="inner">
+                        <div class="acc-input">
+                            <ul>
+                                <li class="acc-dest">
+                            
+                                    <span class="acc-txt14">
+                                        여행지 
+                                        <p>
+                                            <input type="text" value="일본 오사카">
+                                        </p>
+                                        
+                                    </span>
+                            
+                                     
+                                </input>
+                               
+                                   
+                                    
+                                </li>
+                                <li class="acc-search">
+                                    <span class="acc-txt14">
+                                        일정
+                                        <p>
+                                            <input type="date">
+                                       
+                          
+                                            <span class="">-</span>
+                                            <input type="date">
+                                        </p>
+                              
+                                       
+              
+                                    </span>
+                            
+                       
+                                </li>
+                                <li>
+                                    <span class="acc-txt14">
+                                        숙박인원
+                                        <p class="">
+                                            성인 2명
+                                        </p>
+                                    </span>
+                                  
+                                </li>
+
+
+                            </ul>
+                   <button type="button" class="acc-blackBtn">숙소 검색</button>
+               </div> -->
+                <div class="inner">
+                    
+                    <div class="acc-content">
+                        <div class="acc-filter">
+                       
+                            <div class="acc-priceFilter">
+                                <h3>가격</h3>
+                                <em>1박 요금 기준</em>
+                                <div>
+                                    <input type="checkbox" id="less10" value="0" >
+                                    <label for="less10">10만원 이하</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="10man" value="1">
+                                    <label for="10man">10만원 이상 20만원 이하</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="20man" value="2">
+                                    <label for="20man">20만원 이상 30만원 이하</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="30man" value="3">
+                                    <label for="30man">30만원 이상 40만원 이하</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="40man" value="4">
+                                    <label for="40man">40만원 이상 50만원 이하</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="50man" value="5">
+                                    <label for="50man">50만원 이상</label>
+                                </div>
+                            </div>
+                   
+                            <div class="acc-starFilter">
+                                <h3>호텔 성급</h3>
+                                <div>
+                                    <input type="checkbox" id="1star" value="1">
+                                    <label for="1star">1성급</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="2star" value="2">
+                                    <label for="2star">2성급</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="3star" value="3">
+                                    <label for="3star">3성급</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="4star" value="4">
+                                    <label for="4star">4성급</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="5star" value="5">
+                                    <label for="5star">5성급</label>
+                                </div>
+                            </div>
+                         
+                            <div class="acc-filter3">
+                                <h3>정렬</h3>
+                                <div>
+                                    <input type="checkbox" id="recommand"   onclick='checkOnlyOne(this)' checked>
+                                    <label for="recommand">추천순</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" class="sortByLowest"   onclick='checkOnlyOne(this)' >
+                                    <label for="sortByLowest">높은 가격순</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" class="sortByHighest"   onclick='checkOnlyOne(this)'>
+                                    <label for="sortByHighest">낮은 가격 순</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" class="sortByRate"   onclick='checkOnlyOne(this)'>
+                                    <label for="sortByRate">별점 순</label>
+                                </div>
+                   
+                            </div>
+
+                        </div>
+                        <div class="acc-searchList">
+                            <ul>
+                                <!-- <li>
+                                    <img src="./acc-images/Office designs.jpeg" alt="search Image">
+                                    <ul class="acc-searchContent"> 
+                                        <li>
+                                            <strong class="acc-txt20">호텔 그레이서리 신주쿠</strong>
+                                            <span class="acc-greytxtSmall">
+                                                <i class="xi-heart-o"></i>467
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span class="acc-greytxtSmall">  <i class="xi-star"></i> 4성급</span>
+                                        </li>
+                                        <li>
+                                            <span class="acc-greytxt">  4.2</span>
+                                          
+                                           
+                                        </li>
+                                        <li> 
+                                            <div class="freeCancel">무료 취소</div>
+                                            <span>
+                                                345,770원/박
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <img src="./acc-images/Office designs.jpeg" alt="search Image">
+                                    <ul class="acc-searchContent"> 
+                                        <li>
+                                            <span class="acc-txt20">호텔 그레이서리 신주쿠</span>
+                                            <span class="acc-greytxtSmall">
+                                                <i class="xi-heart-o"></i>467
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span class="acc-greytxtSmall">  <i class="xi-star"></i> 4성급</span>
+                                        </li>
+                                        <li>
+                                            <span class="acc-greytxt">  4.2</span>
+                                          
+                                           
+                                        </li>
+                                        <li> 
+                                            <div class="freeCancel">무료 취소</div>
+                                            <span>
+                                                345,770원/박
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <img src="./acc-images/Office designs.jpeg" alt="search Image">
+                                    <ul class="acc-searchContent"> 
+                                        <li>
+                                            <span class="acc-txt20">호텔 그레이서리 신주쿠</span>
+                                            <span class="acc-greytxtSmall">
+                                                <i class="xi-heart-o"></i>467
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span class="acc-greytxtSmall">  <i class="xi-star"></i> 4성급</span>
+                                        </li>
+                                        <li>
+                                            <span class="acc-greytxt">  4.2</span>
+                                          
+                                           
+                                        </li>
+                                        <li> 
+                                            <div class="freeCancel">무료 취소</div>
+                                            <span>
+                                                345,770원/박
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </li> -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+            </section>
+        </main>
+
+        <!-- footer -->
+        <footer id="footer"></footer> 
+    </div>
+     
+    <script src="js/common.js"></script>
+    <script src="js/sub.js"></script>
+    <script src="js/acc-search.js"></script>
+</body>
+</html>

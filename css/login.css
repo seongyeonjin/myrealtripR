@@ -1,0 +1,58 @@
+.main .id {width: 680px; height: 900px;  margin: auto;  
+    text-align: center;
+     margin-top: 150px;}
+.main .id img {width: 250px; height: 40px; margin-left: -5px;}
+.main .id h2 {font-size: 36px; margin-bottom: 70px; margin-top: 5px; font-weight: 500;}
+
+input:checked + .div1::after {
+    content: "";
+    display: inline-block;
+    background-size: 7.5px;
+    background-position:center;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    border: 1px solid goldenrod;
+}
+
+.main .w400 { width: 400px; height: 50px; margin-top: 20px;}
+.main .name input { border: none; border-bottom: 1px solid #666; }
+
+.main .input {width: 400px; height: 60px; font-size: 15px;
+    cursor: pointer;}
+.pack-all { margin-left: 140px; line-height: 55px;}
+
+.lo {margin: 50px 0 10px 0; background: #f39875; color: #fff;
+    border:1px solid #BCAAA4; width: 400px; height: 60px; border-radius: 10px;}
+
+.jo{ background: #fff; color: #BCAAA4; width: 400px; height: 60px;
+    border-radius: 10px;
+    border:1px solid #BCAAA4;}
+    .jo .id2 {border: none; background: none; cursor: pointer;}
+
+
+.main .sub ul {display: flex; text-align: center; justify-content: center; align-items: center;
+    margin: 30px 0 50px;
+}
+.main .sub ul li {margin-left: 20px; padding-right: 20px; position: relative;
+color: #999; }
+.main .sub ul li::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 15px;
+    background: #999;
+    position: absolute; left: 100%; bottom: 5px;
+ }
+
+ .main .sub ul li:last-child::after {
+    content: "";
+    display: block;
+    background: none;
+ }
+   
+.main .hj {width: 400px; height: 60px; border-radius: 10px;
+    position: relative; border: 1px solid #F39875; margin-left: 140px;line-height: 55px;}
+.main .hj a {font-size: 16px; font-weight: 400; }
+.main .hj .k1 img {width: 20px; height: 20px; position: absolute; left: 50px; top: 19px;}
+
+

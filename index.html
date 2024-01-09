@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>마이 리얼 트립: 나만의 여행을 찾아서</title>
+        <meta name="description" content="html5의 구조를 설명" />
+        <meta name="keywords" content="html5의 구조" />
+        <meta name="author" content="홍길동" />
+
+        <meta property="og:url" content="사이트url" />
+        <meta property="og:title" content="제목" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="이미지경로" />
+        <meta property="og:description" content="간단설명" />
+        <link rel="shortcut icon" href="images/favicon.png" />
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css" />
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/common.css" />
+        <link rel="stylesheet" href="css/main.css" />
+    </head>
+    <body>
+        <!-- div#wrap>header#header>div.inner^section#visual+main#container.main>section#content>div.con-box.con$*4>div.inner>h2{타이틀$}^^^^footer#footer>div.inner>h2{로고} -->
+        <p id="skipNav"><a href="#">본문바로가기</a></p>
+        <div id="wrap">
+            <!-- header -->
+            <header id="header"></header>
+
+            <section id="my-real-visual">
+                <div class="inner">
+                    <div class="my-real-choose-box">
+                        <h3>여행을 떠나요</h3>
+                        <div class="my-real-tab">
+                            <p class="on">숙소</p>
+                            <p>투어/티켓</p>
+                            <p>패키지</p>
+                        </div>
+                        <div class="my-real-choose">
+                            <ul>
+                                <li class="destination"><i class="xi-search"></i><span>어디를 여행가십니까?</span></li>
+                                <li>
+                                    <i class="xi-calendar"></i>
+                                    <p>
+                                        <label for="my-real-date"></label>
+                                        <input type="date" name="my-real-date" id="my-real-date">
+                                    </p>
+                                </li>
+                                <li>
+                                    <i class="xi-user-plus-o"></i>
+                                    <p>
+                                        성인
+                                    </p>
+                                </li>
+                                <li>
+                                    <button><a href="">예약하기</a></button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- 검색 팝업 -->
+                    <div class="bg"></div>
+                    <div class="my-real-inp-popup">
+                        <div class="inp-header">
+                            <div class="inp-search">
+                                <p><i class="xi-search"></i></p>
+                                <p class="txt">
+                                    <label for="travel-search"></label>
+                                    <input type="text" id="travel-search" title="travel-search" placeholder=" 여행지나 숙소명 검색" />
+                                </p>
+                                <p class="close"><i class="xi-close"></i></p>
+                            </div>
+                        </div>
+
+                        <div class="nation">
+                            <h4>지역</h4>
+                            <ul class="nation-list">
+                                <li>
+                                    <span><i class="xi-maker"></i></span>
+                                    <div>
+                                        <p>도쿄</p>
+                                        <span>일본,도쿄</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span><i class="xi-maker"></i></span>
+                                    <div>
+                                        <p>후쿠오카</p>
+                                        <span>일본,후쿠오카</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span><i class="xi-maker"></i></span>
+                                    <div>
+                                        <p>삿포로</p>
+                                        <span>일본,삿포로</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span><i class="xi-maker"></i></span>
+                                    <div>
+                                        <p>오사카</p>
+                                        <span>일본,오사카</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span><i class="xi-maker"></i></span>
+                                    <div>
+                                        <p>베이징</p>
+                                        <span>중국,베이징</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span><i class="xi-maker"></i></span>
+                                    <div>
+                                        <p>뉴욕</p>
+                                        <span>미국,뉴욕</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span><i class="xi-maker"></i></span>
+                                    <div>
+                                        <p>로스앤젤레스</p>
+                                        <span>미국,로스엔젤레스</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span><i class="xi-maker"></i></span>
+                                    <div>
+                                        <p>런던</p>
+                                        <span>영국,런던</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span><i class="xi-maker"></i></span>
+                                    <div>
+                                        <p>파리</p>
+                                        <span>프랑스,파리</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span><i class="xi-maker"></i></span>
+                                    <div>
+                                        <p>파리</p>
+                                        <span>프랑스,파리</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span><i class="xi-maker"></i></span>
+                                    <div>
+                                        <p>바르셀로나</p>
+                                        <span>스페인,바르셀로나</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span><i class="xi-maker"></i></span>
+                                    <div>
+                                        <p>로마</p>
+                                        <span>이탈리아,로마</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="inp-body">
+                            <p><span>일치하는 검색어가 없습니다</span>다른 검색어로 검색해보세요</p>
+                        </div>
+                        <p class="esc">
+                            <button>닫기</button>
+                        </p>
+                    </div>
+                    <!-- 인원 팝업 -->
+                    <div class="bg2"></div>
+                    <div class="person-popup">
+                        <div class="person-counting">
+                            <strong>성인</strong>
+                            <div class="counting">
+                                <i class="xi-minus-min minus"></i>
+                                <p class="text">2</p>
+                                <i class="xi-plus-min plus"></i>
+                            </div>
+                            <p class="enter">
+                                <button>확인</button>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="my-real-top-banner">
+                        <ul class="top-banner">
+                            <li>
+                                <img src="./images/topbanner/topbanner0.png" alt="제주도 여행" />
+                            </li>
+                            <li>
+                                <img src="./images/topbanner/topbanner1.png" alt="제주도 여행" />
+                            </li>
+                            <li>
+                                <img src="./images/topbanner/topbanner2.png" alt="제주도 여행" />
+                            </li>
+                            <li>
+                                <img src="./images/topbanner/topbanner3.png" alt="제주도 여행" />
+                            </li>
+                            <li>
+                                <img src="./images/topbanner/topbanner4.png" alt="제주도 여행" />
+                            </li>
+                            <li>
+                                <img src="./images/topbanner/topbanner5.png" alt="제주도 여행" />
+                            </li>
+                        </ul>
+                        <p class="my-real-btn">
+                            <button class="prev"><i class="xi-angle-left-thin"></i></button>
+                            <button class="next"><i class="xi-angle-right-thin"></i></button>
+                        </p>
+                        <ul class="paging">
+                            <li class="on"></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <main id="my-real-container" class="my-real-main">
+                <section id="my-real-content">
+                    <div class="my-real-con-box con1">
+                        <div class="inner">
+                            <h3>실시간 베스트 상품</h3>
+                            <ul class="my-real-list">
+                                <div class="slider-list">
+                                    <li>
+                                        <img src="images/mainpage/portugal.jpg" alt="포르투갈_배경" />
+                                        <div class="list-box">
+                                            <span>패키지</span>
+                                            <strong>이탈리아 일주 10일</strong>
+                                            <p>4,369,000원~</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img src="images/mainpage/city0.jpg" alt="오스트리아_배경" />
+                                        <div class="list-box">
+                                            <span>티켓</span>
+                                            <strong>[인천 중구] 파라다이스시티 원더박스 입장권</strong>
+                                            <p>3,599,000원~</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img src="images/mainpage/city1.jpg" alt="벨기에_배경" />
+                                        <div class="list-box">
+                                            <span>가이드투어</span>
+                                            <strong>괌 오션파크 웨이크보드(미국/괌)</strong>
+                                            <p>98,000원~</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img src="images/mainpage/city2.jpg" alt="다낭_배경" />
+                                        <div class="list-box">
+                                            <span>숙소</span>
+                                            <strong>오리엔탈 호텔 후쿠오카 하카타 스테이션</strong>
+                                            <p>284,000원~~</p>
+                                        </div>
+                                    </li>
+                                </div>
+                                <div class="slider-list">
+                                    <li>
+                                        <img src="images/mainpage/city3.jpg" alt="포르투갈_배경" />
+                                        <div class="list-box">
+                                            <span>패키지</span>
+                                            <strong>스페인/포르투갈 9,10,11일 #루프탑 레스토랑 #시내호텔1박</strong>
+                                            <p>3,599,000원~</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img src="images/mainpage/city4.jpg" alt="오스트리아_배경" />
+                                        <div class="list-box">
+                                            <span>패키지</span>
+                                            <strong>스페인/포르투갈 9,10,11일 #루프탑 레스토랑 #시내호텔1박</strong>
+                                            <p>3,599,000원~</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img src="images/mainpage/city5.jpg" alt="벨기에_배경" />
+                                        <div class="list-box">
+                                            <span>패키지</span>
+                                            <strong>스페인/포르투갈 9,10,11일 #루프탑 레스토랑 #시내호텔1박</strong>
+                                            <p>3,599,000원~</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img src="images/mainpage/city6.jpg" alt="다낭_배경" />
+                                        <div class="list-box">
+                                            <span>패키지</span>
+                                            <strong>스페인/포르투갈 9,10,11일 #루프탑 레스토랑 #시내호텔1박</strong>
+                                            <p>3,599,000원~</p>
+                                        </div>
+                                    </li>
+                                </div>
+                                <div class="slider-list">
+                                    <li>
+                                        <img src="images/mainpage/city7.jpg" alt="포르투갈_배경" />
+                                        <div class="list-box">
+                                            <span>패키지</span>
+                                            <strong>스페인/포르투갈 9,10,11일 #루프탑 레스토랑 #시내호텔1박</strong>
+                                            <p>3,599,000원~</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img src="images/mainpage/city8.jpg" alt="오스트리아_배경" />
+                                        <div class="list-box">
+                                            <span>패키지</span>
+                                            <strong>스페인/포르투갈 9,10,11일 #루프탑 레스토랑 #시내호텔1박</strong>
+                                            <p>3,599,000원~</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img src="images/mainpage/city9.jpg" alt="벨기에_배경" />
+                                        <div class="list-box">
+                                            <span>패키지</span>
+                                            <strong>스페인/포르투갈 9,10,11일 #루프탑 레스토랑 #시내호텔1박</strong>
+                                            <p>3,599,000원~</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img src="images/mainpage/city10.jpg" alt="다낭_배경" />
+                                        <div class="list-box">
+                                            <span>패키지</span>
+                                            <strong>스페인/포르투갈 9,10,11일 #루프탑 레스토랑 #시내호텔1박</strong>
+                                            <p>3,599,000원~</p>
+                                        </div>
+                                    </li>
+                                </div>
+                            </ul>
+                            <p class="my-real-list-btn">
+                                <button class="prev"><i class="xi-angle-left-thin"></i></button>
+                                <button class="next"><i class="xi-angle-right-thin"></i></button>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="my-real-con-box con2">
+                        <div class="inner">
+                            <ul class="main-banner-list">
+                                <li><img src="images/mainpage/content2/mainbanner0.jpeg" alt="" /></li>
+                                <li><img src="images/mainpage/content2/mainbanner1.jpeg" alt="" /></li>
+                                <li><img src="images/mainpage/content2/mainbanner2.jpeg" alt="" /></li>
+                                <li><img src="images/mainpage/content2/mainbanner3.jpeg" alt="" /></li>
+                                <li><img src="images/mainpage/content2/mainbanner4.jpeg" alt="" /></li>
+                                <li><img src="images/mainpage/content2/mainbanner5.jpeg" alt="" /></li>
+                                <li><img src="images/mainpage/content2/mainbanner6.jpeg" alt="" /></li>
+                                <li><img src="images/mainpage/content2/mainbanner7.jpeg" alt="" /></li>
+                                <li><img src="images/mainpage/content2/mainbanner8.jpeg" alt="" /></li>
+                                <li><img src="images/mainpage/content2/mainbanner9.jpeg" alt="" /></li>
+                                <li><img src="images/mainpage/content2/mainbanner10.jpeg" alt="" /></li>
+                                <li><img src="images/mainpage/content2/mainbanner11.jpeg" alt="" /></li>
+                            </ul>
+                            <ul class="paging">
+                                <li class="on"></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="my-real-con-box con3">
+                        <div class="inner">
+                            <h3>가을 단풍 명소</h3>
+                            <ul class="my-real-list">
+                                <div class="slider-list">
+                                    <li>
+                                        <img src="images/mainpage/maple0.jpg" alt="포르투갈_배경" />
+                                        <div class="list-box">
+                                            <span>패키지</span>
+                                            <strong>스페인/포르투갈 9,10,11일 #루프탑 레스토랑 #시내호텔1박</strong>
+                                            <p>3,599,000원~</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img src="images/mainpage/maple1.jpg" alt="오스트리아_배경" />
+                                        <div class="list-box">
+                                            <span>패키지</span>
+                                            <strong>스페인/포르투갈 9,10,11일 #루프탑 레스토랑 #시내호텔1박</strong>
+                                            <p>3,599,000원~</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img src="images/mainpage/maple2.jpg" alt="벨기에_배경" />
+                                        <div class="list-box">
+                                            <span>패키지</span>
+                                            <strong>스페인/포르투갈 9,10,11일 #루프탑 레스토랑 #시내호텔1박</strong>
+                                            <p>3,599,000원~</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img src="images/mainpage/maple3.jpg" alt="다낭_배경" />
+                                        <div class="list-box">
+                                            <span>패키지</span>
+                                            <strong>스페인/포르투갈 9,10,11일 #루프탑 레스토랑 #시내호텔1박</strong>
+                                            <p>3,599,000원~</p>
+                                        </div>
+                                    </li>
+                                </div>
+                                <div class="slider-list">
+                                    <li>
+                                        <img src="images/mainpage/maple3.jpg" alt="포르투갈_배경" />
+                                        <div class="list-box">
+                                            <span>패키지</span>
+                                            <strong>스페인/포르투갈 9,10,11일 #루프탑 레스토랑 #시내호텔1박</strong>
+                                            <p>3,599,000원~</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img src="images/mainpage/maple2.jpg" alt="오스트리아_배경" />
+                                        <div class="list-box">
+                                            <span>패키지</span>
+                                            <strong>스페인/포르투갈 9,10,11일 #루프탑 레스토랑 #시내호텔1박</strong>
+                                            <p>3,599,000원~</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img src="images/mainpage/maple1.jpg" alt="벨기에_배경" />
+                                        <div class="list-box">
+                                            <span>패키지</span>
+                                            <strong>스페인/포르투갈 9,10,11일 #루프탑 레스토랑 #시내호텔1박</strong>
+                                            <p>3,599,000원~</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img src="images/mainpage/maple0.jpg" alt="다낭_배경" />
+                                        <div class="list-box">
+                                            <span>패키지</span>
+                                            <strong>스페인/포르투갈 9,10,11일 #루프탑 레스토랑 #시내호텔1박</strong>
+                                            <p>3,599,000원~</p>
+                                        </div>
+                                    </li>
+                                </div>
+                            </ul>
+                            <p class="my-real-list-btn">
+                                <button class="prev"><i class="xi-angle-left-thin"></i></button>
+                                <button class="next"><i class="xi-angle-right-thin"></i></button>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="my-real-con-box con4">
+                        <div class="inner">
+                            <h3>겨울을 즐기기 좋은 곳 추천</h3>
+                            <div class="img-list">
+                                <div class="my-real-big-img">
+                                    <div class="bg"></div>
+                                    <img src="/images/mainpage/content4/skiling0.jpg" alt="스키타는 사람" />
+                                    <strong>대명리조트 23/24 비발디파크 시즌패스 (스마트/프리미엄)</strong>
+                                    <p>285,000원</p>
+                                </div>
+                                <ul class="my-real-small-list">
+                                    <li class="on">
+                                        <img src="images/mainpage/content4/skiling0.jpg" alt="" />
+                                        <div class="list-box">
+                                            <span>티켓/투어</span>
+                                            <strong>대명리조트 23/24 비발디파크 시즌패스 (스마트/프리미엄)</strong>
+                                            <p>200,000원</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img src="images/mainpage/content4/skiling1.jpg" alt="" />
+                                        <div class="list-box">
+                                            <span>티켓/투어</span>
+                                            <strong>하이원 23/24 시즌패스 (스마트/프리미엄)</strong>
+                                            <p>300,000원</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img src="images/mainpage/content4/skiling2.jpg" alt="" />
+                                        <div class="list-box">
+                                            <span>티켓/투어</span>
+                                            <strong>용평리조트 23/24 시즌패스 (스마트/프리미엄)</strong>
+                                            <p>685,000원</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img src="images/mainpage/content4/skiling3.jpg" alt="" />
+                                        <div class="list-box">
+                                            <span>티켓/투어</span>
+                                            <strong>무주 23/24 시즌패스 (스마트/프리미엄)</strong>
+                                            <p>185,000원</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="my-real-con-box con5">
+                        <div class="inner">
+                            <h3>HOT을 위해 떠나는 여행</h3>
+                            <p class="content-more">
+                                <a href="package.html"><i class="xi-plus-min"></i>더보기</a>
+                            </p>
+                            <ul class="my-real-list">
+                                <div class="slider-list">
+                                    <li>
+                                        <img src="images/mainpage/city4.jpg" alt="포르투갈_배경" />
+                                        <div class="list-box">
+                                            <span>패키지</span>
+                                            <strong>[모두좋아한다낭] 다낭/호이안/바나힐 3박5일 [5성호텔]</strong>
+                                            <p>575,035원~</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img src="images/mainpage/city5.jpg" alt="오스트리아_배경" />
+                                        <div class="list-box">
+                                            <span>패키지</span>
+                                            <strong>[모두좋아한다낭] 다낭/호이안/바나힐 3박5일 [5성호텔]</strong>
+                                            <p>498,399원~~</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img src="images/mainpage/city6.jpg" alt="벨기에_배경" />
+                                        <div class="list-box">
+                                            <span>패키지</span>
+                                            <strong>[모두좋아한다낭] 다낭/호이안/바나힐 3박5일 [5성호텔]</strong>
+                                            <p>599,000원~~</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img src="images/mainpage/city7.jpg" alt="다낭_배경" />
+                                        <div class="list-box">
+                                            <span>패키지</span>
+                                            <strong>[모두좋아한다낭] 다낭/호이안/바나힐 3박5일 [5성호텔]</strong>
+                                            <p>356,044원~</p>
+                                        </div>
+                                    </li>
+                                </div>
+                                <div class="slider-list">
+                                    <li>
+                                        <img src="images/mainpage/city9.jpg" alt="포르투갈_배경" />
+                                        <div class="list-box">
+                                            <span>패키지</span>
+                                            <strong>[모두좋아한다낭] 다낭/호이안/바나힐 3박5일 [5성호텔]</strong>
+                                            <p>575,035원~</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img src="images/mainpage/city10.jpg" alt="오스트리아_배경" />
+                                        <div class="list-box">
+                                            <span>패키지</span>
+                                            <strong>[모두좋아한다낭] 다낭/호이안/바나힐 3박5일 [5성호텔]</strong>
+                                            <p>498,399원~~</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img src="images/mainpage/city11.jpg" alt="벨기에_배경" />
+                                        <div class="list-box">
+                                            <span>패키지</span>
+                                            <strong>[모두좋아한다낭] 다낭/호이안/바나힐 3박5일 [5성호텔]</strong>
+                                            <p>599,000원~~</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img src="images/mainpage/city3.jpg" alt="다낭_배경" />
+                                        <div class="list-box">
+                                            <span>패키지</span>
+                                            <strong>[모두좋아한다낭] 다낭/호이안/바나힐 3박5일 [5성호텔]</strong>
+                                            <p>356,044원~</p>
+                                        </div>
+                                    </li>
+                                </div>
+                            </ul>
+                            <p class="my-real-list-btn">
+                                <button class="prev"><i class="xi-angle-left-thin"></i></button>
+                                <button class="next"><i class="xi-angle-right-thin"></i></button>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="my-real-con-box con6">
+                        <div class="inner">
+                            <h3>포근한 숙소를 원하신다면 여기!</h3>
+                            <p class="content-more">
+                                <a href="accommodation.html"><i class="xi-plus-min"></i>더보기</a>
+                            </p>
+                            <ul class="my-real-list">
+                                <div class="slider-list">
+                                    <li>
+                                        <img src="images/mainpage/hotel0.jpg" alt="포르투갈_배경" />
+                                        <div class="list-box">
+                                            <span>숙소</span>
+                                            <strong>[모두좋아한다낭] 다낭/호이안/바나힐 3박5일 [5성호텔]</strong>
+                                            <p>575,035원~</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img src="images/mainpage/hotel1.jpg" alt="오스트리아_배경" />
+                                        <div class="list-box">
+                                            <span>숙소</span>
+                                            <strong>[모두좋아한다낭] 다낭/호이안/바나힐 3박5일 [5성호텔]</strong>
+                                            <p>498,399원~~</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img src="images/mainpage/hotel2.jpg" alt="벨기에_배경" />
+                                        <div class="list-box">
+                                            <span>숙소</span>
+                                            <strong>[모두좋아한다낭] 다낭/호이안/바나힐 3박5일 [5성호텔]</strong>
+                                            <p>599,000원~~</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img src="images/mainpage/hotel3.jpg" alt="다낭_배경" />
+                                        <div class="list-box">
+                                            <span>숙소</span>
+                                            <strong>[모두좋아한다낭] 다낭/호이안/바나힐 3박5일 [5성호텔]</strong>
+                                            <p>356,044원~</p>
+                                        </div>
+                                    </li>
+                                </div>
+                                <div class="slider-list">
+                                    <li>
+                                        <img src="images/mainpage/hotel3.jpg" alt="포르투갈_배경" />
+                                        <div class="list-box">
+                                            <span>숙소</span>
+                                            <strong>[모두좋아한다낭] 다낭/호이안/바나힐 3박5일 [5성호텔]</strong>
+                                            <p>575,035원~</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img src="images/mainpage/hotel2.jpg" alt="오스트리아_배경" />
+                                        <div class="list-box">
+                                            <span>숙소</span>
+                                            <strong>[모두좋아한다낭] 다낭/호이안/바나힐 3박5일 [5성호텔]</strong>
+                                            <p>498,399원~~</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img src="images/mainpage/hotel1.jpg" alt="벨기에_배경" />
+                                        <div class="list-box">
+                                            <span>숙소</span>
+                                            <strong>[모두좋아한다낭] 다낭/호이안/바나힐 3박5일 [5성호텔]</strong>
+                                            <p>599,000원~~</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img src="images/mainpage/hotel0.jpg" alt="다낭_배경" />
+                                        <div class="list-box">
+                                            <span>숙소</span>
+                                            <strong>[모두좋아한다낭] 다낭/호이안/바나힐 3박5일 [5성호텔]</strong>
+                                            <p>356,044원~</p>
+                                        </div>
+                                    </li>
+                                </div>
+                            </ul>
+                            <p class="my-real-list-btn">
+                                <button class="prev"><i class="xi-angle-left-thin"></i></button>
+                                <button class="next"><i class="xi-angle-right-thin"></i></button>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="my-real-con-box con7">
+                        <div class="inner">
+                            <h3>어떤 여행을 꿈꾸시나요?</h3>
+                            <div class="my-real-box">
+                                <div class="image-box">
+                                    <div class="guide1">
+                                        <img src="images/mainpage/city8.jpg" alt="" />
+                                        <div class="guide-box">
+                                            <h3>오사카 쇼핑 가이드</h3>
+                                            <p>마찬가지로 오사카에도 액세서리 캐릭터 의류 등등 회원제 회원만이 출입할 수 있는 도매쇼핑타운이 있습니다.</p>
+                                        </div>
+                                    </div>
+                                    <div class="guide2">
+                                        <img src="images/mainpage/newyork.jpg" alt="" />
+                                        <div class="guide-box">
+                                            <h3>뉴욕에선 뭐하니</h3>
+                                            <p>봐야 할 것도 가야 할 곳도 많은 뉴욕. 기왕이면 제대로 둘러보고 싶은데 어디부터 가야 할지 뭐가 뭔지도 잘 모르겠다면, 뉴욕 가이드 투어로 고민 끝! 뉴욕 미술관들과 유엔본부 그리고 뉴욕 데이투어와 야경투어까지. 엄선된 뉴요커 가이드와 함께 정복하세요!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="video-box">
+                                    <div class="bg"></div>
+                                    <!-- <iframe width="480px" height="220px" src="https://www.youtube.com/embed/-KBGEwD3c4Y" title="스쿨버스 보다 몸이 긴 고래상어가 플랑크톤만 먹고 산다?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+                                    <h3>고래상어를 만나다</h3>
+                                    <p>멕시코에서 고래 상어와 함께 수영하는 시기는 여러분이 그 나라의 어느 지역을 방문할 것인가에 달려 있습니다. 유카탄 반도 근처에서, 고래 상어 시즌은 6월부터 9월까지이며, 멕시코 바하 반도의 고래 상어 시즌은 겨울부터 이른 봄까지입니다.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+
+            <!-- footer -->
+            <footer id="footer"></footer>
+        </div>
+
+        <script src="js/common.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

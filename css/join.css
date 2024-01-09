@@ -1,0 +1,87 @@
+
+
+.main .con-box {width: 100%;}
+.main .con-box .inner {padding: 150px 0;}
+.sub1 h2 {font-size: 40px; text-align: center; font-weight: 500; line-height: 1; margin-top: 50px; margin-bottom: -50px;}
+
+.main .con1 {background: gainsboro;}
+.main .con1 .inner {
+    /* 실작업에는 높이값 작성X */
+    height: 600px; background: beige;
+}
+.main .con2 {background: blue;}
+.main .con2 .inner {background: skyblue; height: 700px;}
+.main .con3 {background: salmon;}
+.main .con3 .inner {background: greenyellow; height: 650px;}
+.main .con4 {background: paleturquoise;}
+.main .con4 .inner {background: gray; height: 550px;}
+
+
+
+/* 회원가입 */
+
+.join .inner { padding: 150px 0;}
+
+.join h3 {font-size: 40px; font-weight: 500; position: relative; padding-left: 25px; 
+    border-bottom: 2px solid #000; margin-bottom: 30px; padding-bottom: 15px; }
+
+ .join .con { height: 380px; display: flex; justify-content: center; align-items: center; }
+ .join .con ul {display: flex; }
+ .join .con ul li {text-align: center; margin-right: 70px; position: relative;}
+ .join .con ul li:last-child {margin-right: 0;}
+ .join .con ul li::after {
+        content: "";
+        position: absolute; right: -60px; top: 50%;
+        background: #999;
+        width: 70px;
+        height: 1px;}
+.join .list ul li:last-child::after { display: none;}
+.join .list ul li strong {display: block; margin-top: 10px;}
+
+.join h4 {font-size: 30px; margin-top: 25px; margin-bottom: 20px;}
+.join h4 + strong {display: block; border-top: 1px solid #999; padding: 30px 0;
+font-size: 25px;}
+.join h4 + strong span {font-size: 20px;}
+.join h4 + strong span b {margin-left: 0;}
+.join b {color: #82a1ec; margin-left: 5;}
+.join .s1 {padding-left: 20px;}
+
+.ttop strong {font-size: 30px;}
+.ttop span {position: absolute; right: 0; top: 170px;}
+
+.join form table .w1 {width: 150px;}
+.join form table .w2 {width: auto;}
+
+.join .w180 {width: 180px; height: 50px; border: 1px solid #e0e0e0;}
+.join .w340 {width: 340px; height: 50px; border: 1px solid #e0e0e0;}
+.join .w150 {width: 150px; height: 50px; border: 1px solid #e0e0e0;}
+.join .w1030 {width: 800px; height: 50px; border: 1px solid #e0e0e0; margin: 10px 0;}
+.join .w450 {width: 450px; height: 50px; border: 1px solid #e0e0e0;}
+.join .w270 {width: 270px; height: 50px; border: 1px solid #e0e0e0;}
+
+.join form table tr:first-child td {border-top: 1px solid #E39875; padding-top: 10px;}
+.join form table tr td:first-child  {background:#f5f5f5; font-weight: 500;}
+.join form table tr td { border-bottom: 1px solid #dcdcdc; vertical-align: middle;
+    padding: 0 0 10px 10px; }
+
+    .join form table tr td input[type=text],
+    .join form table tr td button,
+    .join form table tr td select,
+    .join form table tr td input[type=password] {
+        height: 50px;
+        border: 1px solid #999;
+        box-sizing: border-box;
+        vertical-align: middle;
+        padding-left: 5px;
+    }
+    .join .jointd { position: relative;}
+    .join .khj1 { margin-top: 5px;}
+    .join .khj2 { width: 100px; height: 50px; margin-left: 3px; position: absolute; margin-top: 5px; }
+    .join .line .linediv {display: flex;}
+    .join form table tr td span { }
+    .join77 {text-align: center; margin-top: 50px;}
+    .join77 button {width: 200px; height: 50px; font-size: 20px; font-weight: 400;}
+    .join77 .btn1 { margin-right: 10px;}
+    .btn input { width: 150px; height: 50px;}
+.join .inner p.p1 { font-size: 21px; margin-bottom: 40px;}
+.join .inner p b { font-size: 14px; padding-top: 40px;} 

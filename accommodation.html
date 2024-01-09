@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>숙소:마이 리얼 트립</title>
+    <meta name="description" content="html5의 구조를 설명"> 
+    <meta name="keywords" content="html5의 구조">
+    <meta name="author" content="홍길동"> 
+    
+    <meta property="og:url" content="사이트url">
+    <meta property="og:title" content="제목">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="이미지경로">
+    <meta property="og:description" content="간단설명">
+    <link rel="shortcut icon" href="acc-images/favicon.png" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/accom.css">
+</head>
+</head>
+<body>    
+ 
+    <p id="skipNav"><a href="#">본문바로가기</a></p>
+    <div id="wrap">
+
+         <!-- header -->
+         <header id="header">
+             
+         </header>
+
+         <section id="subVisual" class="acc-vis">       
+            <div class="acc-banner">
+                <div class="visual">
+                    <div class="image"><img src="" alt=""></div>
+                    <div class="inner">
+                        <div class="acc-btn">
+                            <p class="angle-btn">
+                                <button class="prev"><i class="xi-angle-left"></i></button>
+                                <button class="next"><i class="xi-angle-right"></i></button>
+                            </p>
+                        </div>
+                        <div class="acc-input">
+                            <ul>
+                                <li class="acc-dest">
+                                    <h4>여행지</h4>
+                                    <p>
+                                        <label for="acc-nation"></label>
+                                        <input type="text" name="acc-nation" id="acc-nation">
+                                    </p>
+                                </li>
+                                <li class="acc-date-select">
+                                    <h4>일정</h4>
+                                    <p>
+                                        <label for="d-sel"></label>
+                                        <input type="date" name="d-sel" id="d-sel"> - 
+                                        <label for="dete-hippen"></label>
+                                        <input type="date" name="date-hippen" id="date-hippen">
+                                    </p>
+                                </li>
+                                <li>
+                                    <h4>숙박인원</h4>     
+                                    <p>성인2명</p>     
+                                </li>
+                            </ul>
+                            <button type="button" class="acc-blackBtn">숙소 검색</button>
+                       </div>
+                       <!-- 인원 팝업 -->
+                        <div class="bg2"></div>
+                        <div class="person-popup">
+                            <div class="person-counting">
+                                <strong>성인</strong>
+                                <div class="counting">
+                                    <i class="xi-minus-min minus"></i>
+                                    <p class="text">2</p>
+                                    <i class="xi-plus-min plus"></i>
+                                </div>
+                                <p class="enter">
+                                    <button>확인</button>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+               </div>
+            </div>
+        </section>
+
+        <main id="container" class="acc-main">
+            <section id="content">
+               
+                <div class="inner">
+                    <div class="acc-con1">
+                        <h3> 지역별 인기숙소 보기 </h3>
+                        <ul>
+                            <li>
+                                <div class="acc-coverImg">
+                                    <span>
+                                        미주
+                                    </span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="acc-coverImg">
+                                    <span>
+                                        일본
+                                    </span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="acc-coverImg">
+                                    <span>
+                                        유럽
+                                    </span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="acc-coverImg">
+                                    <span>
+                                        동남아
+                                    </span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="acc-coverImg">
+                                    <span>
+                                        중화권
+                                    </span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="acc-coverImg">
+                                    <span>
+                                        국내
+                                    </span>
+                                </div>
+                            </li>
+                           
+                        
+                        </ul>
+                    </div>
+                    <div class=" con4">
+                        <div class="inner">
+                            <h3>가까운 국내여행 어떠세요?</h3>
+                            <div class="img-list">
+                                <div class="acc-big-img">
+                                    <div class="bg"></div>
+                                    <img src="./acc-images/IMG_5449.jpeg" alt="스키타는 사람">
+                                    <strong>대명리조트 23/24 비발디파크 시즌패스 (스마트/프리미엄)</strong>
+                                    <p>285,000원</p>
+                                </div>
+                                <ul class="acc-small-list">
+                                    <li class="on">
+                                        <img src="./acc-images/IMG_0.jpeg" alt="">
+                                        <div class="list-box">
+                                            <span><i class="xi-star"></i> 4성급</span>
+                                            <strong>대명리조트 23/24 비발디파크 시즌패스 (스마트/프리미엄)</strong>
+                                            <p>200,000원</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img src="./acc-images/IMG_1.jpeg" alt="">
+                                        <div class="list-box">
+                                            <span><i class="xi-star"></i> 5성급</span>
+                                            <strong>하이원 23/24 시즌패스 (스마트/프리미엄)</strong>
+                                            <p>300,000원</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img src="./acc-images/IMG_2.jpeg" alt="">
+                                        <div class="list-box">
+                                            <span><i class="xi-star"></i> 5성급</span>
+                                            <strong>용평리조트 23/24 시즌패스 (스마트/프리미엄)</strong>
+                                            <p>685,000원</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img src="./acc-images/IMG_3.jpeg" alt="">
+                                        <div class="list-box">
+                                            <span><i class="xi-star"></i> 4성급</span>
+                                            <strong>무주리조트 23/24 시즌패스 (스마트/프리미엄)</strong>
+                                            <p>185,000원</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                  <div class="acc-con2">
+                      <h3>이번주 대표 호텔 특가</h3>
+                      <ul>
+                          <li>
+                            <img src="./acc-images/Hotel HK.jpeg" alt="hotel image">
+                            <div class="acc-list">
+                                <span class="acc-txt16">서울신라호텔</span>
+                                <span class="acc-hash">
+                                    <ul class="acc-faci">
+                                        <li>
+                                            <span>아메리카노 두잔</span>
+                                        </li>
+                                        <li>
+                                            <span>피트니스 센터</span>
+                                        </li>
+                                    </ul>
+                                </span>
+                             
+                                <span class="acc-dc">할인 적용가</span>
+                                <span class="acc-price">
+                                    <span class="acc-dc">
+                                        80%
+                                    </span>
+                                    <span class="acc-txt16">
+                                        347,000원
+                                    </span>
+                                </span>
+                            </div>
+                          </li>
+                          <li>
+                            <img src="./acc-images/CORINTHIA BUDAPEST - Updated 2023 Prices & Hotel Reviews (Hungary).jpeg" alt="hotel image">
+                            <div class="acc-list">
+                                <span class="acc-txt16">
+                                    리치칼튼 호텔
+                                </span>
+                         
+                                   <span class="acc-hash">
+                                      <ul class="acc-faci">
+                                          <li>
+                                              <span>역에서 5분 </span>
+                                          </li>
+                                          <li>
+                                            <span>오션뷰 객실</span>
+                                          </li>
+                                      </ul>
+                                   </span>
+                             
+                                <span class="acc-dc">할인 적용가</span>
+                                <span class="acc-price">
+                                    <span class="acc-dc">
+                                        72%
+                                    </span>
+                                    <span class="acc-txt16">
+                                        567,400원
+                                    </span>
+                                </span>
+                            </div>
+                          </li>
+                          <li>
+                            <img src="./acc-images/Halekulani Okinawa _ Luxury Resort Hotel in Okinawa, Japan.jpeg" alt="hotel image">
+                            <div class="acc-list">
+                                <span class="acc-txt16">
+                                    쉐라톤 와이키키
+                                </span>
+                         
+                                   <span class="acc-hash">
+                                      <ul class="acc-faci">
+                                          <li>
+                                              <span>데일리 스파 60분 </span>
+                                          </li>
+                                          <li>
+                                              <span>공항 왕복 교통편 </span>
+                                          </li>
+                                     
+                                      </ul>
+                                   </span>
+                             
+                                <span class="acc-dc">할인 적용가</span>
+                                <span class="acc-price">
+                                    <span class="acc-dc">
+                                        76%
+                                    </span>
+                                    <span class="acc-txt16">
+                                        324,780원
+                                    </span>
+                                </span>
+                            </div>
+                          </li>
+                          <li>
+                            <img src="./acc-images/Hotel Week London celebrates the re-opening of the city's hotels - The Hotel Trotter.jpeg" alt="hotel image">
+                            <div class="acc-list">
+                                <span class="acc-txt16">
+                                    제이파크 아일랜드 호텔
+                                </span>
+                         
+                                   <span class="acc-hash">
+                                      <ul class="acc-faci">
+                                          <li>
+                                              <span>2박 이상 조식포함 </span>
+                                          </li>
+                                          <li>
+                                            <span>공항 근처호텔 </span>
+                                          </li>
+                                      </ul>
+                                   </span>
+                             
+                                <span class="acc-dc">할인 적용가</span>
+                                <span class="acc-price">
+                                    <span class="acc-dc">
+                                        62%
+                                    </span>
+                                    <span class="acc-txt16">
+                                       567,800원
+                                    </span>
+                                </span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="acc-banner4 con5">
+                    <div class="inner">
+                        <ul class="main-banner-list">
+                            <li><img src="acc-images/mid-banner/bnr_1.jpg" alt=""></li>
+                            <li><img src="acc-images/mid-banner/bnr_2.jpg" alt=""></li>
+                            <li><img src="acc-images/mid-banner/bnr_3.jpg" alt=""></li>
+                            <li><img src="acc-images/mid-banner/bnr_4.jpg" alt=""></li>
+                            <li><img src="acc-images/mid-banner/bnr_5.jpg" alt=""></li>
+                            <li><img src="acc-images/mid-banner/bnr_6.jpg" alt=""></li>
+                            <li><img src="acc-images/mid-banner/bnr_7.jpg" alt=""></li>
+                     
+                        </ul>
+                        <ul class="paging">
+                            <li class="on"></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            
+                        </ul>
+                    </div>
+                </div>
+                  <div class="acc-con3">
+                      <h3>나에게 딱 맞는 숙소 찾기 </h3>
+                      
+                      <div class="acc-tabHeader">
+                          <ul>
+                                <li class="on">
+                                    <button type="button" onclick="openTab(event, 'acc-tabBody1')" class="acc-tablinks">키즈프렌들리숙소</button>
+                                </li>
+                                <li>
+                                    <button type="button" onclick="openTab(event, 'acc-tabBody2')" class="acc-tablinks">럭셔리 풀빌라</button>
+                                </li>
+                                <li>
+                                    <button type="button" onclick="openTab(event, 'acc-tabBody3')" class="acc-tablinks">허니문 호텔</button>
+                                </li>
+                                <li>
+                                    <button type="button" onclick="openTab(event, 'acc-tabBody4')" class="acc-tablinks">휴양리조트</button>
+                                <li>
+                                    <button type="button" onclick="openTab(event, 'acc-tabBody5')" class="acc-tablinks">가심비호텔</button>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="acc-tabBody">
+                            <div id="acc-tabBody1" class="acc-hideTab" >
+                              <!-- 안에 탭 내용 -->
+                                <ul>
+                                    <li>
+                                        <img src="./acc-images/Marina Sands Bay in the evening.jpeg" alt="hotel image">
+                                        <div class="acc-list">
+                                            <strong>[싱가포르] 마리나 베이 샌즈</strong>
+                                            <span class="acc-price">347,000원</span>
+                                    </div>
+                                    </li>
+                                    <li>
+                                    <img src="./acc-images/Mystique hotel - Santorini, Greece_.jpeg" alt="hotel image">
+                                    <div class="acc-list">
+                                            <strong>[그리스] St.Santorini 호텔</strong>
+                                            <span class="acc-price">567,400원</span>
+                                    </div>
+                                    </li>
+                                    <li>
+                                    <img src="./acc-images/Off-The-Grid Hotels With On-Point Aesthetics.jpeg" alt="hotel image">
+                                    <div class="acc-list">
+                                            <strong>[일본] 스위소텔 난카이 오사카</strong>
+                                            <span class="acc-price">343,400원</span>
+                                    </div>
+                                    </li>
+                                    <li>
+                                    <img src="./acc-images/Rooms and Suites｜HOTEL THE MITSUI KYOTO Official Website.jpeg" alt="hotel image">
+                                    <div class="acc-list">
+                                            <strong>[일본] 노보텔 오키나와 나하</strong>
+                                            <span class="acc-dc">62%</span>
+                                            <span class="acc-price">567,800원</span>
+                                    </div>
+                                    </li>
+                                </ul>
+                                <ul class="acc-hideLi">
+                                    <li>
+                                        <img src="./acc-images/sigapore.jpg" alt="hotel image">
+                                        <div class="acc-list">
+                                            <strong>그랜드 하얏트 후쿠오카</strong>
+                                            <span class="acc-dc">22%</span>
+                                            <span class="acc-price">524,800원</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img src="./acc-images/Our Best Instagram Hotel Photos — The Agenda by Tablet Hotels.jpeg" alt="hotel image">
+                                        <div class="acc-list">
+                                            <strong>[방콕] JW메리어트 호텔 방콕</strong>
+                                            <span class="acc-dc">32%</span>
+                                            <span class="acc-price">344,800원</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img src="./acc-images/Royal Cliff Beach Hotel by DBALP.jpeg" alt="hotel image">
+                                        <div class="acc-list">
+                                            <strong>차트리움 그랜드 방콕</strong>
+                                            <span class="acc-dc">42%</span>
+                                            <span class="acc-price">674,800원</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img src="./acc-images/Ryokans in Japan_ Tradition & Luxury.jpeg" alt="hotel image">
+                                        <div class="acc-list">
+                                            <strong>[유후인] 고투부키 하나노쇼</strong>
+                                            <span class="acc-dc">54%</span>
+                                            <span class="acc-price">374,800원</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <button class="more">
+                                    더보기
+                                </button>
+                                
+                          </div>
+                          <div id="acc-tabBody2" class="acc-hideTab">
+                            <ul>
+                                <li>
+                                    <img src="./acc-images/Ryokans in Japan_ Tradition & Luxury.jpeg" alt="hotel image">
+                                    <div class="acc-list">
+                                        <strong>[후쿠오카] 크로스 라이프 텐진</strong>
+                                        <span class="acc-dc">62%</span>
+                                        <span class="acc-price">347,800원</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="./acc-images/The Peninsula Shanghai.jpeg " alt="hotel image">
+                                    <div class="acc-list">
+                                        <strong>[중국] 더 비 상하이</strong>
+                                        <span class="acc-dc">12%</span>
+                                        <span class="acc-price">567,400원</span>
+                                    </div>
+                                <li>
+                                    <img src="./acc-images/Sunset.jpg" alt="hotel image">
+                                    <div class="acc-list">
+                                        <strong>Burj Khalifa Hotel</strong>
+                                        <span class="acc-dc">62%</span>
+                                        <span class="acc-price">347,800원</span>
+                                    </div>
+                                <li>
+                                    <img src="./acc-images/The best hotels in Japan.jpeg" alt="hotel image">
+                                    <div class="acc-list">
+                                        <strong>차트리움 그랜드 방콕</strong>
+                                        <span class="acc-dc">KB PAY 결제 시</span>
+                                        <span class="acc-price">347,800원</span>
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul class="acc-hideLi2">
+                                <li>
+                                    <img src="./acc-images/Marina Sands Bay in the evening.jpeg" alt="hotel image">
+                                    <div class="acc-list">
+                                        <strong>[싱가포르] 마리나 베이 샌즈</strong>
+                                        <span class="acc-dc">44%</span>
+                                        <span class="acc-price">347,800원</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="./acc-images/Mystique hotel - Santorini, Greece_.jpeg" alt="hotel image">
+                                    <div class="acc-list">
+                                        <strong>[그리스] St.Santorini 호텔</strong>
+                                        <span class="acc-dc">44%</span>
+                                        <span class="acc-price">567,800원</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="./acc-images/Off-The-Grid Hotels With On-Point Aesthetics.jpeg" alt="hotel image">
+                                    <div class="acc-list">
+                                        <strong>[일본] 스위소텔 난카이 오사카</strong>
+                                        <span class="acc-dc">24%</span>
+                                        <span class="acc-price">324,800원</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="./acc-images/Rooms and Suites｜HOTEL THE MITSUI KYOTO Official Website.jpeg" alt="hotel image">
+                                    <div class="acc-list">
+                                        <strong>[일본] 노보텔 오키나와 나하</strong>
+                                        <span class="acc-dc">33%</span>
+                                        <span class="acc-price">764,800원</span>
+                                    </div>
+                                </li>
+                            </ul>
+                            <button class="more2">
+                                더보기
+                             </button>
+                            
+                          </div>
+                          <div id="acc-tabBody3" class="acc-hideTab">
+                            <ul>
+                                <li>
+                                    <img src="./acc-images/The Lush and Luxurious Sanya EDITION on Hainan Island.jpeg" alt="hotel image">
+                                    <div class="acc-list">
+                                        <strong>칸쿤 올 인클루시브</strong>
+                                        <span class="acc-dc">14%</span>
+                                        <span class="acc-price">114,800원</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="./acc-images/10 Fun Marina Bay Sands Tips For Your Luxury Stay in Singapore.jpeg" alt="hotel image">
+                                    <div class="acc-list">
+                                        <strong>포 시즌스 호텔 방콕</strong>
+                                        <span class="acc-dc">14%</span>
+                                        <span class="acc-price">121,800원</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="./acc-images/The Most Incredible Hotels in the World for Under $250.jpeg" alt="hotel image">
+                                    <div class="acc-list">
+                                        <strong>노보텔 오키나와 나하</strong>
+                                        <span class="acc-dc">32%</span>
+                                        <span class="acc-price">444,800원</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="./acc-images/Spa Getaways_ The Ultimate Vacation _ Travel_Luxury.jpeg" alt="hotel image">
+                                    <div class="acc-list">
+                                        <strong>차트리움 그랜드 방콕</strong>
+                                        <span class="acc-dc">32%</span>
+                                        <span class="acc-price">124,800원</span>
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul class="acc-hideLi3">
+                                <li>
+                                    <img src="./acc-images/Marina Sands Bay in the evening.jpeg" alt="hotel image">
+                                    <div class="acc-list">
+                                        <strong>[싱가포르] 마리나 베이 샌즈</strong>
+                                        <span class="acc-dc">44%</span>
+                                        <span class="acc-price">347,800원</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="./acc-images/Mystique hotel - Santorini, Greece_.jpeg" alt="hotel image">
+                                    <div class="acc-list">
+                                        <strong>[그리스] St.Santorini 호텔</strong>
+                                        <span class="acc-dc">44%</span>
+                                        <span class="acc-price">567,800원</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="./acc-images/Off-The-Grid Hotels With On-Point Aesthetics.jpeg" alt="hotel image">
+                                    <div class="acc-list">
+                                        <strong>[일본] 스위소텔 난카이 오사카</strong>
+                                        <span class="acc-dc">24%</span>
+                                        <span class="acc-price">324,800원</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="./acc-images/Rooms and Suites｜HOTEL THE MITSUI KYOTO Official Website.jpeg" alt="hotel image">
+                                    <div class="acc-list">
+                                        <strong>[일본] 노보텔 오키나와 나하</strong>
+                                        <span class="acc-dc">33%</span>
+                                        <span class="acc-price">764,800원</span>
+                                    </div>
+                                </li>
+                            </ul>
+                            <button class="more3">
+                                더보기
+                             </button>
+                          </div>
+                          <div id="acc-tabBody4" class="acc-hideTab">
+                            <ul>
+                                <li>
+                                    <img src="./acc-images/CORINTHIA BUDAPEST - Updated 2023 Prices & Hotel Reviews (Hungary).jpeg" alt="hotel image">
+                                    <div class="acc-list">
+                                        <strong>그랜드 하얏트 후쿠오카</strong>
+                                        <span class="acc-dc">44%</span>
+                                        <span class="acc-price">647,800원</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="./acc-images/Off-The-Grid Hotels With On-Point Aesthetics.jpeg" alt="hotel image">
+                                    <div class="acc-list">
+                                        <strong>스위소텔 난카이 오사카</strong>
+                                        <span class="acc-dc">78%</span>
+                                        <span class="acc-price">337,800원</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="./acc-images//W Panama _ Luxury Hotel Design Inspo.jpeg" alt="hotel image">
+                                    <div class="acc-list">
+                                        <strong>신라 모노그램 다낭</strong>
+                                        <span class="acc-dc">38%</span>
+                                        <span class="acc-price">447,800원</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="./acc-images/Your guide to Bangkok.jpg" alt="hotel image">
+                                    <div class="acc-list">
+                                        <strong>쉐라톤 발리 꾸따 리조트</strong>
+                                        <span class="acc-dc">40%</span>
+                                        <span class="acc-price">237,800원</span>
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul class="acc-hideLi4">
+                                <li>
+                                    <img src="./acc-images/The Lush and Luxurious Sanya EDITION on Hainan Island.jpeg" alt="hotel image">
+                                    <div class="acc-list">
+                                        <strong>칸쿤 올 인클루시브</strong>
+                                        <span class="acc-dc">14%</span>
+                                        <span class="acc-price">114,800원</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="./acc-images/10 Fun Marina Bay Sands Tips For Your Luxury Stay in Singapore.jpeg" alt="hotel image">
+                                    <div class="acc-list">
+                                        <strong>포 시즌스 호텔 방콕</strong>
+                                        <span class="acc-dc">14%</span>
+                                        <span class="acc-price">121,800원</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="./acc-images/The Most Incredible Hotels in the World for Under $250.jpeg" alt="hotel image">
+                                    <div class="acc-list">
+                                        <strong>노보텔 오키나와 나하</strong>
+                                        <span class="acc-dc">32%</span>
+                                        <span class="acc-price">444,800원</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="./acc-images/Spa Getaways_ The Ultimate Vacation _ Travel_Luxury.jpeg" alt="hotel image">
+                                    <div class="acc-list">
+                                        <strong>차트리움 그랜드 방콕</strong>
+                                        <span class="acc-dc">32%</span>
+                                        <span class="acc-price">124,800원</span>
+                                    </div>
+                                </li>
+                            </ul>
+                            <button class="more4">
+                                더보기
+                             </button>
+                          </div>
+                          <div id="acc-tabBody5" class="acc-hideTab">
+                            <ul>
+                                <li>
+                                    <img src="./acc-images/sigapore.jpg" alt="hotel image">
+                                    <div class="acc-list">
+                                        <strong>그랜드 하얏트 후쿠오카</strong>
+                                        <span class="acc-dc">22%</span>
+                                        <span class="acc-price">524,800원</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="./acc-images/Our Best Instagram Hotel Photos — The Agenda by Tablet Hotels.jpeg" alt="hotel image">
+                                    <div class="acc-list">
+                                        <strong>[방콕] JW메리어트 호텔 방콕</strong>
+                                        <span class="acc-dc">32%</span>
+                                        <span class="acc-price">344,800원</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="./acc-images/Royal Cliff Beach Hotel by DBALP.jpeg" alt="hotel image">
+                                    <div class="acc-list">
+                                        <strong>차트리움 그랜드 방콕</strong>
+                                        <span class="acc-dc">42%</span>
+                                        <span class="acc-price">674,800원</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="./acc-images/Ryokans in Japan_ Tradition & Luxury.jpeg" alt="hotel image">
+                                    <div class="acc-list">
+                                        <strong>[유후인] 고투부키 하나노쇼</strong>
+                                        <span class="acc-dc">54%</span>
+                                        <span class="acc-price">374,800원</span>
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul class="acc-hideLi5">
+                                <li>
+                                    <img src="./acc-images/Marina Sands Bay in the evening.jpeg" alt="hotel image">
+                                    <div class="acc-list">
+                                        <strong>[싱가포르] 마리나 베이 샌즈</strong>
+                                        <span class="acc-price">347,000원</span>
+                                  </div>
+                                </li>
+                                <li>
+                                  <img src="./acc-images/Mystique hotel - Santorini, Greece_.jpeg" alt="hotel image">
+                                  <div class="acc-list">
+                                        <strong>[그리스] St.Santorini 호텔</strong>
+                                        <span class="acc-price">567,400원</span>
+                                  </div>
+                                </li>
+                                <li>
+                                  <img src="./acc-images/Off-The-Grid Hotels With On-Point Aesthetics.jpeg" alt="hotel image">
+                                  <div class="acc-list">
+                                        <strong>[일본] 스위소텔 난카이 오사카</strong>
+                                        <span class="acc-price">343,400원</span>
+                                  </div>
+                                </li>
+                                <li>
+                                  <img src="./acc-images/Rooms and Suites｜HOTEL THE MITSUI KYOTO Official Website.jpeg" alt="hotel image">
+                                  <div class="acc-list">
+                                        <strong>[일본] 노보텔 오키나와 나하</strong>
+                                        <span class="acc-dc">62%</span>
+                                        <span class="acc-price">567,800원</span>
+                                  </div>
+                                </li>
+                            </ul>
+                            <button class="more5">
+                                더보기
+                             </button>
+                          </div>
+                    
+               
+  
+                      </div>
+                  </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- footer -->
+        <footer id="footer"></footer> 
+    </div>
+     
+    <script src="js/common.js"></script>
+    <script src="js/sub.js"></script>
+    <script src="js/accomo.js"></script>
+</body>
+</html>

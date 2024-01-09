@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>숙소/상세: 마이 리얼 트립</title>
+    <meta name="description" content="html5의 구조를 설명"> 
+    <meta name="keywords" content="html5의 구조">
+    <meta name="author" content="홍길동"> 
+    
+    <meta property="og:url" content="사이트url">
+    <meta property="og:title" content="제목">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="이미지경로">
+    <meta property="og:description" content="간단설명">
+    <link rel="shortcut icon" href="images/favicon.png" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/sub.css">
+    <link rel="stylesheet" href="css/acc-detail.css">
+</head>
+<body>
+    
+    <!-- div#wrap>header#header>div.inner^section#visual+main#container.main>section#content>div.con-box.con$*4>div.inner>h2{타이틀$}^^^^footer#footer>div.inner>h2{로고} -->
+    <p id="skipNav"><a href="#">본문바로가기</a></p>
+    <div id="wrap">
+        
+        <!-- header -->
+        <header id="header"></header>
+        <section id="acc-det-Visual" class="acc-vis-det">
+            <div class="acc-banner">
+                <div class="inner">
+                    <div class="acc-input">
+                        <ul>
+                            <li class="acc-dest">
+                                <h4>여행지</h4>
+                                <p>
+                                    <label for="acc-nation"></label>
+                                    <input type="text" name="acc-nation" id="acc-nation">
+                                </p>
+                            </li>
+                            <li class="acc-date-select">
+                                <h4>일정</h4>
+                                <p>
+                                    <label for="d-sel"></label>
+                                    <input type="date" name="d-sel" id="d-sel"> - 
+                                    <label for="dete-hippen"></label>
+                                    <input type="date" name="date-hippen" id="date-hippen">
+                                </p>
+                            </li>
+                            <li>
+                                <h4>숙박인원</h4>     
+                                <p>성인2명</p>     
+                            </li>
+                        </ul>
+                        <button type="button" class="acc-blackBtn">숙소 검색</button>
+                   </div>
+                   <!-- 인원 팝업 -->
+                   <div class="bg2"></div>
+                   <div class="person-popup">
+                       <div class="person-counting">
+                           <strong>성인</strong>
+                           <div class="counting">
+                               <i class="xi-minus-min minus"></i>
+                               <p class="text">2</p>
+                               <i class="xi-plus-min plus"></i>
+                           </div>
+                           <p class="enter">
+                               <button>확인</button>
+                           </p>
+                       </div>
+                   </div>
+                </div>       
+            </div>
+        </section>
+
+        <main id="acc_detail_container" class="acc_detail_sub4">
+            <section id="acc_detail_content">
+                <div class="inner">
+                    <div class="detail-wrap">
+                        <p class="navigation">
+                            <span>대한민국<i class="xi-angle-right-min"></i></span>
+                            <span><i class="xi-maker-drop"></i>인천</span>
+                        </p>
+                        <div class="acc-group">
+                            <p class="acc-pic">
+                                <img src="./acc-images/hotelimg/h1.jpeg">
+                                <img src="./acc-images/hotelimg/h2.jpeg">
+                                <img src="./acc-images/hotelimg/h3.jpeg">
+                                <img src="./acc-images/hotelimg/h4.jpeg">
+                                <img src="./acc-images/hotelimg/h5.jpeg">
+                            </p>
+                            <button class="acc-morepic">사진 더보기</button>
+                        </div>
+                        <h2>[인천 중구] 호텔한큐레스파이어인천</h2>
+                        <p class="star">
+                            <i class="xi-star"></i>
+                            <i class="xi-star"></i>
+                            <i class="xi-star"></i>
+                            <i class="xi-star"></i>
+                            <i class="xi-star"></i>
+                            <span>5.0</span>
+                            <span>(6)</span>
+                            <i class="xi-angle-right-min"></i>
+                        </p>
+                        <div class="benefit">
+                            <p><span><i class="xi-shield-checked-o"></i></span><span class="weight">최저가 보상제</span>차액의 두배 포인트 보상</p>
+                            <p><span><i class="xi-lightning"></i></span><span class="weight">즉시 확정</span>구매 즉시 예약 확정 (일부 상품 이용일 추가 예약 필요)</p>
+                        </div>
+                        <div class="ticket-type">
+                            <p><i class="xi-check"></i>카카오페이 선착순 7% 즉시할인</p>
+                            <p><i class="xi-credit-card"></i>최대 12개월 무이자 할부 가능
+                            </p>
+                        </div>
+                        <div class="ticket-type ">
+                            <div class="acc-describe">
+                                <div class="acc-facil">
+                                    <p>편의 시설</p>
+                                    <ul>
+                                        <li>
+                                            <i class="xi-wifi"></i>
+                                            <span>무료 와이파이</span>
+                                        </li>
+                                        <li>
+                                            <i class="xi-wifi"></i>
+                                            <span>무료 와이파이</span>
+                                        </li>
+                                        <li>
+                                            <i class="xi-wifi"></i>
+                                            <span>무료 와이파이</span>
+                                        </li>
+                                        <li>
+                                            <i class="xi-wifi"></i>
+                                            <span>무료 와이파이</span>
+                                        </li>
+                                        <li>
+                                            <i class="xi-wifi"></i>
+                                            <span>무료 와이파이</span>
+                                        </li>
+                                        <li>
+                                            <i class="xi-wifi"></i>
+                                            <span>무료 와이파이</span>
+                                        </li>
+                                        <li>
+                                            <i class="xi-wifi"></i>
+                                            <span>무료 와이파이</span>
+                                        </li>
+                                        <li>
+                                            <i class="xi-wifi"></i>
+                                            <span>무료 와이파이</span>
+                                        </li>
+                                        
+                                    </ul>
+                                </div>
+                                <div class="map">
+                                    <p>숙소 위치</p>
+                                    <img src="./acc-images/staticmap.png">
+                                    <div class="acc-loc">
+                                        <p>1-1 Ofukacho, Kita, Osaka, Osaka, 530-0011</p>
+                                        <!-- <button> 주소 복사 </button> -->
+                                    </div>
+                      
+
+                                    </p>
+                                </div>
+                            </div>
+             
+                            
+                    
+           
+                        </div>
+                        <div class="acc-info">
+                            <span>호텔한큐레스파이어인천</span>
+                            <p> 인천(중구)에 위치</p>
+                            <span> 숙소 소개 </span>
+                            <p>
+                               본 숙소(Hotel Hankyu RESPIRE OSAKA)는 비즈니스 또는 휴가차 오사카에 방문한 모든 여행객들을 위한 최고의 위치에 자리잡고 있습니다. 투숙객이 즐거운 시간을 보낼 수 있도록 다양한 시설과 특전을 제공합니다. 본 숙소에는 Wi-Fi (무료/전 객실), 일일 청소 서비스, 세탁실, 휠체어 접근 가능, 24시간 프런트 데스크 등이 갖춰져 있습니다. 각 객실은 아름답게 꾸며져 있으며 편리한 시설을 갖추고 있습니다. 본 숙소에서 다양한 여가 시설을 이용할 수 있습니다. 본 숙소(Hotel Hankyu RESPIRE OSAKA)는 오사카 여행 혹은 단순한 휴식과 충전을 위한 탁월한 선택입니다.
+                            </p>
+                            <span> 위치 정보 </span>
+                            <p>
+                               본 숙소(Hotel Hankyu RESPIRE OSAKA)는 비즈니스 또는 휴가차 오사카에 방문한 모든 여행객들을 위한 최고의 위치에 자리잡고 있습니다. 투숙객이 즐거운 시간을 보낼 수 있도록 다양한 시설과 특전을 제공합니다. 본 숙소에는 Wi-Fi (무료/전 객실), 일일 청소 서비스, 세탁실, 휠체어 접근 가능, 24시간 프런트 데스크 등이 갖춰져 있습니다. 각 객실은 아름답게 꾸며져 있으며 편리한 시설을 갖추고 있습니다. 본 숙소에서 다양한 여가 시설을 이용할 수 있습니다. 본 숙소(Hotel Hankyu RESPIRE OSAKA)는 오사카 여행 혹은 단순한 휴식과 충전을 위한 탁월한 선택입니다.
+                            </p>
+                            <span> 시설 및 제공 서비스  </span>
+                            <p>
+                               시설 및 제공 서비스
+                               24시간 피트니스 센터 등의 레크리에이션 시설을 이용하거나 테라스 및 정원 전망을 즐기실 수 있습니다. 이 호텔에는 무료 무선 인터넷, 시설 내 쇼핑 시설 및 자판기도 편의 시설/서비스로 마련되어 있습니다.
+                            </p>
+                        </div>
+                        <h3>객실 선택</h3>
+                        <div class="select">
+                   
+                            <div class="sel s1">
+                                <div class="imgbox">
+                                    <img src="./acc-images/dubai - the edition hotel.jpeg" alt="hootleimg">
+                                </div>
+                                <div class="">
+                                 
+                                    <strong>더블룸 (24~29층, 금연) </strong>
+                                    <p class="acc-desc">
+                                        <ul>
+                                            <li>
+                                                <strong><i class="xi-check"></i> 환불 불가</strong>
+                                                <span><i class="xi-check"></i> 무료 조식포함</span>
+                                           
+
+                                             </li>
+                                      
+                                        </ul>
+                                    </p>
+                                </div>
+                                <div class="info info1">
+                                    <em>미사용 전액환불</em>
+                                    <span>28,000원</span>
+                                    <span><i class="xi-arrow-down"></i>15%</span>
+                                    <p>1명<span class="money">23,800</span><span class="won">원</span></p>
+                                </div>
+                                <div class="counting">
+                                    <i class="xi-minus-min minus"></i>
+                                    <p class="text">0</p>
+                                    <i class="xi-plus-min plus"></i>
+                                </div>
+                            </div>
+                            <div class="sel s1">
+                                <div class="imgbox">
+                                    <img src="./acc-images/dubai - the edition hotel.jpeg" alt="hootleimg">
+                                </div>
+                                <div class="">
+                                 
+                                    <strong>더블룸 (24~29층, 금연) </strong>
+                                    <p class="acc-desc">
+                                        <ul>
+                                            <li>
+                                                <strong><i class="xi-check"></i> 환불 불가</strong>
+                                                <span><i class="xi-check"></i> 무료 조식포함</span>
+                                           
+
+                                             </li>
+                                      
+                                        </ul>
+                                    </p>
+                                </div>
+                                <div class="info info1">
+                                    <em>미사용 전액환불</em>
+                                    <span>28,000원</span>
+                                    <span><i class="xi-arrow-down"></i>15%</span>
+                                    <p>1명<span class="money">23,800</span><span class="won">원</span></p>
+                                </div>
+                                <div class="counting">
+                                    <i class="xi-minus-min minus"></i>
+                                    <p class="text">0</p>
+                                    <i class="xi-plus-min plus"></i>
+                                </div>
+                            </div>
+                            <div class="sel s1">
+                                <div class="imgbox">
+                                    <img src="./acc-images/dubai - the edition hotel.jpeg" alt="hootleimg">
+                                </div>
+                                <div class="">
+                                 
+                                    <strong>더블룸 (24~29층, 금연) </strong>
+                                    <p class="acc-desc">
+                                        <ul>
+                                            <li>
+                                                <strong><i class="xi-check"></i> 환불 불가</strong>
+                                                <span><i class="xi-check"></i> 무료 조식포함</span>
+                                           
+
+                                             </li>
+                                      
+                                        </ul>
+                                    </p>
+                                </div>
+                                <div class="info info1">
+                                    <em>미사용 전액환불</em>
+                                    <span>28,000원</span>
+                                    <span><i class="xi-arrow-down"></i>15%</span>
+                                    <p>1명<span class="money">23,800</span><span class="won">원</span></p>
+                                </div>
+                                <div class="counting">
+                                    <i class="xi-minus-min minus"></i>
+                                    <p class="text">0</p>
+                                    <i class="xi-plus-min plus"></i>
+                                </div>
+                            </div>
+                            <div class="sel s1">
+                                <div class="imgbox">
+                                    <img src="./acc-images/dubai - the edition hotel.jpeg" alt="hootleimg">
+                                </div>
+                                <div class="">
+                                 
+                                    <strong>더블룸 (24~29층, 금연) </strong>
+                                    <p class="acc-desc">
+                                        <ul>
+                                            <li>
+                                                <strong><i class="xi-check"></i> 환불 불가</strong>
+                                                <span><i class="xi-check"></i> 무료 조식포함</span>
+                                           
+
+                                             </li>
+                                      
+                                        </ul>
+                                    </p>
+                                </div>
+                                <div class="info info1">
+                                    <em>미사용 전액환불</em>
+                                    <span>28,000원</span>
+                                    <span><i class="xi-arrow-down"></i>15%</span>
+                                    <p>1명<span class="money">23,800</span><span class="won">원</span></p>
+                                </div>
+                                <div class="counting">
+                                    <i class="xi-minus-min minus"></i>
+                                    <p class="text">0</p>
+                                    <i class="xi-plus-min plus"></i>
+                                </div>
+                            </div>
+                            <div class="sel s1">
+                                <div class="imgbox">
+                                    <img src="./acc-images/dubai - the edition hotel.jpeg" alt="hootleimg">
+                                </div>
+                                <div class="">
+                                 
+                                    <strong>더블룸 (24~29층, 금연) </strong>
+                                    <p class="acc-desc">
+                                        <ul>
+                                            <li>
+                                                <strong><i class="xi-check"></i> 환불 불가</strong>
+                                                <span><i class="xi-check"></i> 무료 조식포함</span>
+                                           
+
+                                             </li>
+                                      
+                                        </ul>
+                                    </p>
+                                </div>
+                                <div class="info info1">
+                                    <em>미사용 전액환불</em>
+                                    <span>28,000원</span>
+                                    <span><i class="xi-arrow-down"></i>15%</span>
+                                    <p>1명<span class="money">23,800</span><span class="won">원</span></p>
+                                </div>
+                                <div class="counting">
+                                    <i class="xi-minus-min minus"></i>
+                                    <p class="text">0</p>
+                                    <i class="xi-plus-min plus"></i>
+                                </div>
+                            </div>
+                           
+                            
+                           
+                        </div>
+                        <!-- <div class="detail-img">
+                            <img src="images/wonderbox/wonderbox0.jpeg" alt="">
+                            <div class="gradient"></div>
+                          
+                        </div> -->
+                        <!-- <div class="acc-detail">
+                            <div>
+                               <span>속소 정책 </span>
+                               <strong> 체크인/체크아웃 </strong>
+                               <P>
+                                   <ul>
+                                       <li>- 체크인 : 15:00 ~ 05:00/li>
+                                       <li>- 체크아웃 : 12:00 까지</li>
+                                   </ul>
+                               </P>
+                               <strong> 알아두실 사항</strong>
+                               <P>
+                                   <ul>
+                                       <li>「환불불가」라고 기재되어있는 예약은, 예약이 성립된 시점부터 100% 취소수수료가 발생합니다.</li>
+                                       <li>호텔에 직접 문의하셔도, 취소수수료의 감액・면제는 도와드릴수 없습니다.다시 한번 예약내용을 확인 하신 후, 예약하시기 바랍니다.</li>
+                                       <li>본 숙소는 반려동물의 출입을 엄격히 금지합니다.</li>
+                                       <li>
+                                           장애인 안내 동물은 요금 및 제한 사항이 면제됩니다
+                                           반려동물 동반 불가</li>
+                                   </ul>
+                               </P>
+                            </div>
+                            <div></div>
+                        </div>
+                        <p  class="detail-more"><button>상세정보 더보기</button></p> -->
+                        <h4 class="rev"> 방문객 후기 </h4>
+                        <div class="review-box">
+                         
+                            <div class="review-total">
+                              
+                                <h2>5.0</h2>
+                                <p class="star">
+                                    <i class="xi-star"></i>
+                                    <i class="xi-star"></i>
+                                    <i class="xi-star"></i>
+                                    <i class="xi-star"></i>
+                                    <i class="xi-star"></i>
+                                </p>
+                                <span>후기 6개</span>
+                            </div>
+                            <ul class="review-list">
+                                <li>
+                                    <p class="star">
+                                        <i class="xi-star"></i>
+                                        <i class="xi-star"></i>
+                                        <i class="xi-star"></i>
+                                        <i class="xi-star"></i>
+                                        <i class="xi-star"></i>
+                                        <span class="name">백**</span>
+                                    </p>
+                                    <span class="date">2023-08-13</span>
+                                    <strong>아이들이 좋아합니다. 키가 110이하면 탈 만한 것이 많이 없어요.</strong>
+                                </li>
+                                <li>
+                                    <p class="star">
+                                        <i class="xi-star"></i>
+                                        <i class="xi-star"></i>
+                                        <i class="xi-star"></i>
+                                        <i class="xi-star"></i>
+                                        <i class="xi-star"></i>
+                                        <span class="name">백**</span>
+                                    </p>
+                                    <span class="date">2023-08-13</span>
+                                    <strong>아이들이 좋아합니다. 키가 110이하면 탈 만한 것이 많이 없어요.</strong>
+                                </li>
+                                <li>
+                                    <p class="star">
+                                        <i class="xi-star"></i>
+                                        <i class="xi-star"></i>
+                                        <i class="xi-star"></i>
+                                        <i class="xi-star"></i>
+                                        <i class="xi-star"></i>
+                                        <span class="name">백**</span>
+                                    </p>
+                                    <span class="date">2023-08-13</span>
+                                    <strong>아이들이 좋아합니다. 키가 110이하면 탈 만한 것이 많이 없어요.</strong>
+                                </li>
+                                <li>
+                                    <p class="star">
+                                        <i class="xi-star"></i>
+                                        <i class="xi-star"></i>
+                                        <i class="xi-star"></i>
+                                        <i class="xi-star"></i>
+                                        <i class="xi-star"></i>
+                                        <span class="name">백**</span>
+                                    </p>
+                                    <span class="date">2023-08-13</span>
+                                    <strong>아이들이 좋아합니다. 키가 110이하면 탈 만한 것이 많이 없어요.</strong>
+                                </li>
+                                <li>
+                                    <p class="star">
+                                        <i class="xi-star"></i>
+                                        <i class="xi-star"></i>
+                                        <i class="xi-star"></i>
+                                        <i class="xi-star"></i>
+                                        <i class="xi-star"></i>
+                                        <span class="name">백**</span>
+                                    </p>
+                                    <span class="date">2023-08-13</span>
+                                    <strong>아이들이 좋아합니다. 키가 110이하면 탈 만한 것이 많이 없어요.</strong>
+                                </li>
+                                <li>
+                                    <p class="star">
+                                        <i class="xi-star"></i>
+                                        <i class="xi-star"></i>
+                                        <i class="xi-star"></i>
+                                        <i class="xi-star"></i>
+                                        <i class="xi-star"></i>
+                                        <span class="name">백**</span>
+                                    </p>
+                                    <span class="date">2023-08-13</span>
+                                    <strong>아이들이 좋아합니다. 키가 110이하면 탈 만한 것이 많이 없어요.</strong>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="introduction">
+                            <h4>이용안내</h4>
+                            <p class="info">
+                                <span>이용시간</span>   
+                            </p>
+                            <p class="info">
+                                <span>사용방법</span>
+                                - 판매기간 : ~ 2023.10.30</br>
+                                - 유효기간 : 2023.09.01 ~ 2023.10.31</br>
+                                </br>
+                                - 1. 온라인 티켓 구매 (구매 후 1시간 이후부터 사용가능)</br>
+                                - 2. LMS 문자 수신 (문자 미수신 시 재발송 문의 : 02-6933-6480 스마틱스)</br>
+                                - 3. 현장 매표소 or 키오스크 발권</br>
+                            </p>
+                            <p class="info">
+                                <span>추가정보</span>
+                                [추가정보]</br>
+                                - [운영안내]</br>
+                                - 운영시간 : 연중무휴 : 11:00~19:00 (단, 티켓발권 마감은 18시입니다)</br>
+                                - 9/27(수)~10/9(월) 운영시간 : 11:00~20:00</br>
+                                - (단, 티켓 발권 마감 시간 : 19:00)</br>
+                                - 만 나이 통일법이 시행되는 23년 6월 28일부터 적용됩니다.</br>
+                                - 대인(만12세이상) 소인(37개월이상~만12세), 유아(36개월 이하) 무료입장</br>
+                                - 12세 소인의 경우 연령 확인이 가능한 증빙서류(주민등록등본 또는 기타 서류)를 반드시 제시해 주시기 바랍니다.</br>
+                                - 연중무휴</br>
+                            </p>
+                            <p class="btn-more">
+                                <button>더보기<i class="xi-angle-down-min"></i></button>
+                            </p>
+                            <p class="add-info">
+                                - [유의사항]</br>
+                                - 자유이용권 구매 후 해당 일 운영시간 내 재입장 가능</br>
+                                - 놀이기구 이용 시 신장 및 몸무게 제한이 있습니다. 이용 전 확인 필요합니다.</br>
+                                - 카니발게임은 원더박스 내 무인 발권기를 통해 별도 구매 후 이용 가능합니다.</br>
+                                - 자유이용권은 환불, 취소, 양도가 불가능하며, 분실과 훼손 시 재발급되지 않습니다.</br>
+                                - 주말 및 공휴일에는 많은 고객들의 방문으로 원더박스 내부가 혼잡할 수 있으며, 입장 및 놀이기구 이용시 대기시간이 발생할 수 있습니다.</br>
+                                - 놀이기구 이용 시 신장 및 몸무게 제한이 있습니다. 이용 전 확인 바랍니다.</br>
+                                - 스카이트레일 이용 시 구두와 슬리퍼(크록스) 등 착용 고객의 이용이 제한될 수 있습니다.</br>
+                                - 유모차는 다른 고객에게 피해를 주지 않도록 지정 장소에 보관하는 것을 권장합니다.</br>
+                                - 안전하고 즐거운 이용을 위해 아래 물품의 반입을 제한하고 있습니다.</br>
+                                - 1) 외부음식물(이유식 및 알러지식 제외) / 주류</br>
+                                - 2) 버너/돗자리/애완동물(안내견 제외)</br>
+                                - 3) 자전거/인라인/킥보드 등 소형탑승기구, 무선조종탑승기구</br>
+                                - 다른 손님에게 피해를 줄 수 있는 행동은 삼가 주시기 바랍니다.</br>
+                                - 1) 대기 동선에서 부정한 방법으로 줄 서기</br>
+                                - 2) 고성방가, 과격한 행동, 음주 후 어트랙션 이용</br>
+                                - 3) 원더박스 외부 흡연구역 이외에서의 흡연 등</br>
+                                - 미아가 발생하면 당황하지 마시고 1층 내에 위치한 안내데스크를 찾아주시기 바라며 아이의 인상착의 등 정보를 알려주시면 최대한 빠르게 아이를 찾는데 도움을 드립니다.<br>
+                            </br>
+                                [업체정보]</br>
+                                [파라다이스시티 원더박스]</br>
+                                * 업체주소 : 대한민국 인천광역시 중구 영종해안남로321번길 186</br>
+                                * 문의전화 : 032-729-7500</br>
+                                * 홈페이지 : https://www.p-city.com/front/wonderbox/overview</br>
+                                * 운영시간 : 매일:11:00~19:00</br>
+                                * 휴무일 : 연중무휴</br>
+                                * 주차 : 가능</br>
+                                <button class="folding">접기<i class="xi-angle-up-min"></i></button>
+                            </p>
+                            <p class="cancle">
+                                <span>취소 및 환불 규정</span>
+                                - 유효기간 내 미사용티켓 100% 환불가능</br>
+                                - 유효기간 후 미사용티켓 100% 환불가능</br>
+                                - 사용한 티켓은 환불 불가능합니다.</br>
+                                - 티켓 구매 이후, 부분 환불은 불가합니다.</br>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="reservation">
+                        <div class="resv-info">
+                            <span>28,000원</span>
+                            <span><i class="xi-arrow-down"></i>15%</span>
+                            <p>쿠폰할인가<span class="money">23,800</span>부터</p>
+                        </div>
+                        <p class="resv-btn">
+                            <button><i class="xi-lightning"></i>티켓 선택</button>
+                        </p>
+                        <p class="confirm">
+                            <i class="xi-lightning"></i>
+                            구매 후 즉시 확정됩니다.
+                        </p>
+                    </div>
+
+                </div>
+            </section>
+        </main>
+
+
+
+       
+        <!-- footer -->
+        <footer id="footer"></footer>
+     
+
+
+    </div>
+
+<!-- 어두운배경 -->
+<div class="bg"> </div>
+    
+
+    <!-- 이미지 팝업 -->
+<div class="popup-gallery ">
+    <div class="gallelry-header">
+        <p class="total-img">
+          <!-- image
+        <span>xx</span> of
+        <strong>xxx</strong>   -->
+        </p>          
+        <p class="close"><i class="xi-close"></i></p>
+    </div>
+    
+    <div class="gallelry-body">          
+        <img src="acc-images/Fitness Club PALESTRA.jpeg" alt="" />
+        <strong>타이틀</strong>
+        <p class="btn">
+        <button class="prev"><i class="xi-angle-left"></i></button>
+        <button class="next"><i class="xi-angle-right"></i></button>
+        </p>
+    </div>
+
+    <script src="js/common.js"></script>
+    <script src="js/acc-detail.js"></script>
+     
+</body>
+</html>

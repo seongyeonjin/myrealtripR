@@ -1,0 +1,459 @@
+/* 숙소 공통 */
+.acc-txt14 {
+    font-size: 14px;
+    z-index: 1;
+}
+h3 {
+    font-size: 32px;
+    margin: 40px 0;
+    font-weight: 500;
+}
+.acc-txt16 {
+    font-size: 16px;
+    font-weight: 500;
+}
+.acc-dc {
+    font-size: 14px;
+    color: #e2754a;
+    margin-right: 10px;
+}
+.acc-con1,
+.acc-con2,
+.acc-con3 {
+    margin: 150px 0;
+}
+
+#subVisual {width: 100%;position: relative;margin: auto;}
+.acc-banner {
+    /* background-image: url('../ /sigapore.jpg' );  */
+    position: relative;
+    width: 100%;
+}
+.acc-banner .visual {
+    width: 100%;
+    position: relative;
+    height: 600px;
+}
+.acc-banner .visual img {
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    height: auto;
+    max-width: inherit;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+}
+.acc-banner .visual .angle-btn button {
+    position: absolute;
+    top: 50%;
+    border: none;
+    background: rgba(0,0,0,0.3);
+    font-size: 24px;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 50%;
+}
+.acc-banner .visual .angle-btn .prev {
+    left: -120px;
+}
+.acc-banner .visual .angle-btn .next {
+    right: -120px;
+}
+
+
+/* acc-visual input */
+#subVisual .acc-banner .visual .inner {position: relative;margin: auto;width: 1060px;height: 600px;}
+.acc-input {padding: 25px;box-sizing: border-box;display: flex;justify-content: space-between;height: 120px;background: #fff;align-items:end;position: absolute;left: 0;top: 400px;width: 1060px;border-radius: 10px;}
+.acc-input ul {display: flex;justify-content: space-between;align-items: center;}
+.acc-input ul li {margin-right: 30px;}
+.acc-input ul li h4 {font-size: 16px;margin-bottom: 15px;line-height: 1;font-weight: 600;}
+.acc-input ul .acc-dest p input[type=text] {width: 200px;height: 40px;border: 1px solid #e5e5e5;border-radius: 10px;box-sizing: border-box;}
+.acc-input ul .acc-date-select p input[type=date] {width: 200px;height: 40px;border-radius: 10px;padding: 10px;box-sizing: border-box;border: 1px solid #e5e5e5;color: #a7a7a7;}
+.acc-input ul li:last-child p {height: 40px;line-height: 40px;width: 180px;background: #fff;text-indent: 10px;border-radius: 10px;border: 1px solid #e5e5e5;}
+.acc-input .acc-blackBtn {border: none;background: #191919;color: #fff;width: 100px;border-radius: 10px;border: 1px solid #e5e5e5;box-sizing: border-box;height: 50px;}
+input[type="date"] ,input{
+    position: relative;
+    text-align: center;
+    width: 150px;
+    height: 50px;
+    border: 1px solid #E5E5E5;
+}
+
+input[type="date"]::-webkit-clear-button,
+input[type="date"]::-webkit-inner-spin-button { display: none;}
+input[type="date"]::-webkit-calendar-picker-indicator {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    color: transparent;
+    cursor: pointer;
+}
+input[type="date"]::before{
+    content: "날짜를 입력해주세요";
+    width: 100%;
+}
+ input[type="date"]:valid::before{
+    display: none;
+}
+input[data-placeholder]::before{
+    font-size: 14px;
+    color: #000;
+}
+/* 인원 수 추가 */
+.acc-vis .person-popup {width: 330px;height: 120px;background: #fff;border-radius: 10px
+;border: 1px solid #e5e5e5;padding: 20px 30px;box-sizing: border-box;position: absolute;right: 35px;top: 495px;;
+display: none;z-index:1;}
+.acc-vis .person-popup.show {display: block;}
+.acc-vis .person-popup .person-counting {display: flex;justify-content: space-between;flex-wrap: wrap;}
+.acc-vis .person-popup .person-counting strong {font-size: 16px;}
+.acc-vis .person-popup .person-counting .counting {display: flex;text-align: center;align-items: center;margin-left: 50px;}
+.acc-vis .person-popup .person-counting .counting i {width: 24px;height: 24px;line-height: 24px;border: 1px solid #82a1ec;background: #fff;color: #82a1ec;border-radius: 50%;cursor: pointer;}
+.acc-vis .person-popup .person-counting .counting p {margin: 0 20px;}
+.acc-vis .person-popup .enter {position: absolute;right: 30px;top: 70px;}
+.acc-vis .person-popup .enter button {background: transparent;border: 1px solid #82a1ec;width: 50px;height: 30px;color: #82a1ec;border-radius: 5px;}
+
+.acc-vis .bg {position: fixed;width: 100%;height: 100%;background: #000;left: 0;top: 0;background: rgba(0,0,0,0.3);display: none;z-index: 1;;}
+.acc-vis .bg.on {display: block;}
+.acc-vis .bg2 {position: fixed;width: 100%;height: 100%;background: #000;left: 0;top: 0;background: rgba(0,0,0,0.3);display: none;z-index: 1;;}
+.acc-vis .bg2.on {display: block;}
+
+
+/* acc-con1 */
+.acc-con1 ul {
+    display: flex;
+    margin: 30px 0;
+}
+.content .acc-con1 ul li {
+    cursor: pointer;
+}
+
+.acc-con1 ul li .acc-coverImg {
+    background-image: url('../acc-images/Postal\ Service\ Accidentally\ Put\ Vegas\ Statue\ of\ Liberty\ on\ Stamp\ —\ and\ it\ Cost\ Them\ Over\ $3\ Million.jpg ');
+    width: 160px;
+    height: 160px;
+    margin-left: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    position: relative;
+    border-radius: 100%;
+    position: relative;
+    justify-content: space-between;
+}
+.acc-con1 ul li .acc-coverImg span {
+    text-align: center;
+    display: block;
+    top: 50%;
+    position: absolute;
+    left: 50%;
+    font-size: 32px;
+    font-weight: 500;
+    color: #fff;
+    margin: -25px 0 0 -25px;
+}
+
+.acc-con1 ul li:nth-child(2) .acc-coverImg {
+    background-image: url('../acc-images/_.jpeg ');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.acc-con1 ul li:nth-child(3) .acc-coverImg {
+    background-image: url('../acc-images/Mornings\ In\ Paris\ -\ Gal\ Meets\ Glam.jpg ');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.acc-con1 ul li:nth-child(4) .acc-coverImg {
+    background-image: url('../acc-images/Your\ guide\ to\ Bangkok.jpg ');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.acc-con1 ul li:nth-child(4) .acc-coverImg span {
+    left: 40%;
+}
+.acc-con1 ul li:nth-child(5) .acc-coverImg {
+    background-image: url('../acc-images/City\ Lights.jpg');
+    background-size: cover;
+}
+.acc-con1 ul li:nth-child(5) .acc-coverImg span {
+    left: 40%;
+}
+.acc-con1 ul li:nth-child(6) .acc-coverImg {
+    background-image: url('../acc-images/Flower\ fields\ underneath\ Sanbang\ Mountain\ on\ Jeju….jpg');
+}
+
+.acc-con1 ul li .acc-coverImg:hover {
+    transition: transform 0.3s linear;
+    transform: scale(1.1);
+}
+/* acc-con2 */
+.acc-con2 > ul {display: flex;justify-content: space-between;}
+.acc-con2 > ul li {cursor: pointer;}
+.acc-con2 > ul li .acc-list > span {margin: 5px 0;display: block;}
+.acc-con2 > ul li .acc-list > span:first-child {margin-bottom: 10px;}
+.acc-con2 ul li img, .acc-con3 ul li img {
+    width: 250px;
+    height: 200px;
+    border-radius: 10px;
+}
+.acc-con2 > ul li img {
+    margin-bottom: 10px;
+}
+.acc-con2 ul li .acc-list .acc-hash .acc-faci {
+    margin: 0;
+}
+
+.acc-con2 ul li .acc-list .acc-hash .acc-faci li {
+    background: #e5e5e5;
+    border-radius: 10px;
+    box-sizing: border-box;
+    height: 26px;
+    padding: 0 3px;
+    display: inline-block;
+    margin-right: 5px;
+}
+.acc-con2 ul li .acc-list .acc-hash .acc-faci li span {
+    display: block;
+    line-height: 2;
+    font-size: 12px;
+    padding: 0 5px;
+    box-sizing: border-box;
+}
+/* acc-con3 */
+.acc-con3 {
+    margin-bottom: 220px;
+}
+.acc-con3 ul {display: flex;justify-content: space-between;}
+.acc-con3 ul li {margin-bottom: 30px;}
+.acc-tabHeader {
+}
+.acc-con3 .acc-tabHeader ul {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    overflow: auto;
+    margin-bottom: 4rem;
+}
+.acc-con3 .acc-tabHeader ul li {
+    min-width: 761px;
+    display: table-cell;
+    text-align: center;
+    margin-left: 0;
+    border: 1px dotted #e5e5e5;
+    border-bottom: 0.2rem solid #191919;
+    cursor: pointer;
+}
+.acc-con3 .acc-tabHeader ul li.on {
+    min-width: 761px;
+    display: table-cell;
+    text-align: center;
+    margin-left: 0;
+    border: 2px solid #191919;
+    border-bottom: none;
+}
+.acc-con3 .acc-tabHeader ul li.on button {
+    color: #191919;
+    font-weight: 700;
+}
+.acc-con3 .acc-tabHeader ul li button {
+    height: 60px;
+    background-color: #fff;
+    color: #6e6e6e;
+    /* font-size: 1.7rem; */
+    border-radius: 0;
+    border: 0;
+    font-size: 16px;
+    width: 200px;
+    cursor: pointer;
+}
+.acc-con3 .acc-tabBody {
+    position: relative;
+}
+.acc-con3 .acc-tabBody .acc-list strong {font-size: 16px;font-weight: 600;display: block;}
+.acc-con3 .acc-tabBody .acc-list .acc-price {font-size: 16px;color: #6e6e6e;}
+
+.acc-con3 .acc-hideTab,
+.acc-con3 .acc-hideTab .acc-hideLi,
+.acc-con3 .acc-hideTab .acc-hideLi2,
+.acc-con3 .acc-hideTab .acc-hideLi3,
+.acc-con3 .acc-hideTab .acc-hideLi4,
+.acc-con3 .acc-hideTab .acc-hideLi5 {
+    display: none;
+    font-size: 20px;
+}
+.acc-con3 .acc-hideTab:first-of-type {
+    display: block;
+    font-size: 20px;
+}
+.acc-con3 .acc-showTab {
+    display: block;
+    font-size: 20px;
+}
+.acc-con3 .acc-tabBody .acc-hideTab span:nth-child(2) {
+    margin-bottom: 40px;
+}
+.acc-con3 .acc-tabBody .acc-hideTab > ul li img {
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.more,
+.more2,
+.more3,
+.more4,
+.more5 {
+    margin-top: 40px;
+    display: block;
+    text-align: center;
+    width: 170px;
+    height: 60px;
+    /* line-height: 50px; */
+    border: 1px solid #191919;
+    font-size: 16px;
+    background-color: #fff;
+    border-radius: 10px;
+    color: #191919;
+    justify-items: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+}
+
+.con4 {
+    width: 100%;
+}
+.con4 .img-list {
+    display: flex;
+    justify-content: space-between;
+}
+.con4 .acc-big-img {
+    width: 512px;
+    position: relative;
+    height: 350px;
+}
+.con4 .acc-big-img .bg {
+    width: 512px;
+    height: 350px;
+    background: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.con4 .acc-big-img img {
+    width: 512px;
+    height: 350px;
+}
+.con4 .acc-big-img strong {
+    position: absolute;
+    left: 20px;
+    bottom: 30px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 20px;
+    display: block;
+    width: 300px;
+}
+.con4 .acc-big-img p {
+    position: absolute;
+    right: 20px;
+    bottom: 30px;
+    color: #fff;
+    font-size: 16px;
+}
+.con4 .acc-small-list {
+    width: 510px;
+    height: 350px;
+    border: 1px solid #e5e5e5;
+    /* display: block; */
+}
+.con4 .acc-small-list {
+    display: block;
+    border-radius: 0;
+}
+.con4 .acc-small-list li {
+    margin: 0;
+    display: flex;
+    position: relative;
+    border-bottom: 1px solid #e5e5e5;
+    height: 86px;
+    border-radius: 0;
+    cursor: pointer;
+}
+.con4 .acc-small-list li.on {
+    border: 1px solid #82a1ec;
+}
+.con4 .acc-small-list li img {
+    width: 90px;
+    height: 86px;
+    border-radius: 0;
+}
+.con4 .acc-small-list li .list-box {
+    margin-left: 15px;
+}
+.con4 .acc-small-list li .list-box span {
+    display: block;
+    font-size: 14px;
+    color: #a7a7a7;
+    line-height: 1;
+    margin: 10px 0;
+}
+.con4 .acc-small-list li .list-box strong {
+    display: block;
+    width: 310px;
+}
+.con4 .acc-small-list li .list-box p {
+    position: absolute;
+    right: 10px;
+    bottom: 5px;
+}
+
+.con5 .inner {
+    height: 300px;
+    position: relative;
+}
+.con5 .main-banner-list {
+    margin-top: 30px;
+    position: relative;
+    overflow: hidden;
+    width: 1060px;
+    height: 300px;
+}
+.con5 .main-banner-list li {
+    width: 1060px;
+    height: 300px;
+    position: absolute;
+    left: 110%;
+    top: 0;
+    transition: 0.5s;
+
+}
+.con5 .main-banner-list li:first-child {
+    left: 0;
+}
+.con5 .main-banner-list li img {
+    width: 100%;
+    height: 300px;
+}
+.con5 .paging {
+    display: flex;
+    position: absolute;
+    right: 470px;
+    bottom: 20px;
+    z-index: 20;
+    cursor: pointer;
+}
+.con5 .paging li {
+    width: 10px;
+    height: 10px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 100%;
+    margin-right: 5px;
+}
+.con5 .paging li.on {
+    background: #e2754a;
+}
