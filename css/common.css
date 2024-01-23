@@ -1,0 +1,42 @@
+#wrap {width: 100%;min-width:1600px;}
+.inner {width: 1060px;margin: auto;box-sizing: border-box;position: relative;}
+#header {position: relative;width: 100%;height: 110px;border-bottom: 1px solid #ddd;}
+#header h1 {position: absolute;left: 0;top: 40px}
+#header h1 img {width: 150px;}
+#header .nav {position: relative;}
+#header .nav .gnb {position: absolute;left: 150px;top: 45px;display: flex;}
+#header .nav .gnb li {margin-left: 80px;}
+#header .nav .gnb li:hover {border-bottom: 2px solid #000;}
+#header .nav .gnb li a { font-size: 16px;font-weight: 500;}
+#header .top-menu {position: absolute;right: 0;top: 40px;display: flex;}
+#header .top-menu li {margin-left: 30px;width: 92px;height: 37px;border: 1px solid #6E6E6E;line-height: 37px;text-align: center;border-radius: 4px;}
+#header .top-menu li a {font-size: 16px;color: #6e6e6e;}
+#header .top-menu li:first-child {border: none;}
+#header p {width: 300px;height: 50px;text-align: left;line-height: 50px;border: 1px solid #ddd;padding: 0 30px;box-sizing: border-box;position: absolute;left: 200px;top: 30px;border-radius: 30px;font-size: 16px;}
+#header p i {margin-right: 10px;font-size: 16px;}
+/* header */
+
+#footer {width: 100%;}
+#footer .inner {color: #6e6e6e;}
+#footer .as-wrap {display: flex;border-top: 1px solid #E5E5E5;margin-top: 20px;}
+#footer .as-wrap dt {margin-bottom: 20px;font-weight: 600;font-size: 15px;}
+#footer .as-wrap .as dt {font-size: 18px;}
+#footer .as-wrap dd {font-size: 14px;margin-bottom: 10px;} 
+#footer .as-wrap .as {margin: 30px 245px 30px 0px;}
+#footer .as-wrap .as dd {margin-bottom: 5px;}
+#footer .as-wrap .site {display: flex;margin: 30px 0;}
+#footer .as-wrap .site dl {margin-right: 90px;}
+#footer .copy-wrap {border-top: 1px solid #E5E5E5;font-size: 12px;margin-bottom: 30px;position: relative;}
+#footer .copy-wrap .terms {display: flex;margin-top: 30px;margin-bottom: 10px;}
+#footer .copy-wrap .terms p:nth-child(2) a {font-weight: 600;}
+#footer .copy-wrap .terms p {margin-right: 60px;}
+#footer .copy-wrap .terms p a {font-size: 14px;}
+#footer .copy-wrap p {margin-bottom: 17px;}
+#footer .sns {position: absolute;right: 150px;top: 15px;}
+#footer .sns a {font-size: 24px;}
+#footer .sns a i {margin-right: 15px;vertical-align: middle;color: #6e6e6e;}
+#footer .sns a:nth-child(5)::before {content:"";display: block;width: 1px;height: 24px;background: #6e6e6e;position: absolute;right: 90px;top: 10px}
+#footer .sns a:nth-child(5) {margin-left: 5px;margin-top: -5px;}
+#footer select {position: absolute;right: 0;top: 15px;width: 120px;height: 40px;color: #6e6e6e;padding: 0 10px;box-sizing: border-box;outline: none;cursor: pointer;}
+/* footer */
+

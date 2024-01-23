@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta name="description" content="html5의 구조를 설명"> 
+    <meta name="keywords" content="html5의 구조">
+    <meta name="author" content="홍길동"> 
+    
+    <meta property="og:url" content="사이트url">
+    <meta property="og:title" content="제목">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="이미지경로">
+    <meta property="og:description" content="간단설명">
+    <link rel="shortcut icon" href="images/favicon.png" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/sub.css">
+</head>
+<body>
+    
+    <!-- div#wrap>header#header>div.inner^section#visual+main#container.main>section#content>div.con-box.con$*4>div.inner>h2{타이틀$}^^^^footer#footer>div.inner>h2{로고} -->
+    <p id="skipNav"><a href="#">본문바로가기</a></p>
+    <div id="wrap">
+        
+         <!-- header -->
+         <header id="header"></header>
+
+         <section id="subVisual" class="air-vis">
+            <h2>sub2 페이지</h2>
+        </section>
+
+        <main id="container" class="air-vis">
+            <section id="content">
+                <div class="inner">
+                    <button>oooo</button>
+                    <h2>sub2 페이지 타이틀 </h2>
+                </div>
+            </section>
+        </main>
+   
+       <!-- footer -->
+       <footer id="footer"></footer>  
+    </div>
+     
+    <script src="js/include.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/sub.js"></script>
+
+</body>
+</html>

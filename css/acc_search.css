@@ -1,0 +1,121 @@
+/* 검색창 부분 ㅊㄴㄴ */
+#acc-ser-Visual {width: 100%;height: 120px;position: relative;margin: auto;box-sizing: border-box;}
+#acc-ser-Visual .acc-banner .visual .inner {position: relative;margin: auto;width: 1060px;height: 120px;}
+.acc-input {padding: 25px;box-sizing: border-box;display: flex;justify-content: space-between;height: 120px;background: #fff;align-items:end;position: absolute;left: 0;top: 0;width: 1060px;border-radius: 10px;background: #e5e5e5;margin-top: 13px;}
+.acc-input ul {display: flex;justify-content: space-between;align-items: center;}
+.acc-input ul li {margin-right: 30px;}
+.acc-input ul li h4 {font-size: 16px;margin-bottom: 15px;line-height: 1;font-weight: 600;}
+.acc-input ul .acc-dest p input[type=text] {width: 200px;height: 40px;border: 1px solid #e5e5e5;border-radius: 10px;box-sizing: border-box;}
+.acc-input ul .acc-date-select p input[type=date] {width: 200px;height: 40px;border-radius: 10px;padding: 10px;box-sizing: border-box;border: 1px solid #e5e5e5;color: #a7a7a7;}
+.acc-input ul li:last-child p {height: 40px;line-height: 40px;width: 180px;background: #fff;text-indent: 10px;border-radius: 10px;border: 1px solid #e5e5e5;}
+.acc-input .acc-blackBtn {border: none;background: #191919;color: #fff;width: 100px;border-radius: 10px;border: 1px solid #e5e5e5;box-sizing: border-box;height: 50px;}
+/* 인원 수 추가 */
+#acc-ser-Visual .person-popup {width: 330px;height: 120px;background: #fff;border-radius: 10px
+;border: 1px solid #e5e5e5;padding: 20px 30px;box-sizing: border-box;position: absolute;right: 35px;top: 108px;;
+display: none;z-index:1;}
+#acc-ser-Visual .person-popup.show {display: block;}
+#acc-ser-Visual .person-popup .person-counting {display: flex;justify-content: space-between;flex-wrap: wrap;}
+#acc-ser-Visual .person-popup .person-counting strong {font-size: 16px;}
+#acc-ser-Visual .person-popup .person-counting .counting {display: flex;text-align: center;align-items: center;margin-left: 50px;}
+#acc-ser-Visual .person-popup .person-counting .counting i {width: 24px;height: 24px;line-height: 24px;border: 1px solid #82a1ec;background: #fff;color: #82a1ec;border-radius: 50%;cursor: pointer;}
+#acc-ser-Visual .person-popup .person-counting .counting p {margin: 0 20px;}
+#acc-ser-Visual .person-popup .enter {position: absolute;right: 30px;top: 70px;}
+#acc-ser-Visual .person-popup .enter button {background: transparent;border: 1px solid #82a1ec;width: 50px;height: 30px;color: #82a1ec;border-radius: 5px;}
+
+#acc-ser-Visual .bg {position: fixed;width: 100%;height: 100%;background: #000;left: 0;top: 0;background: rgba(0,0,0,0.3);display: none;z-index: 1;;}
+#acc-ser-Visual .bg.on {display: block;}
+#acc-ser-Visual .bg2 {position: fixed;width: 100%;height: 100%;background: #000;left: 0;top: 0;background: rgba(0,0,0,0.3);display: none;z-index: 1;;}
+#acc-ser-Visual .bg2.on {display: block;}
+
+
+
+
+
+.acc-content {display: flex; margin-top: 20px; margin-bottom: 100px;}
+     .acc-content .acc-filter {width: 30%;}
+     .acc-content .acc-filter  .acc-priceFilter {display: grid;}
+/* end of filter */
+
+.acc-searchList { width: 100%; ; box-sizing: border-box;}
+.acc-searchList ul li ul {border: 1px solid #e5e5e5;border-radius: 10px; padding: 50px 20px;box-sizing: border-box;margin-bottom: 10px;}
+.acc-searchList ul li {display: flex; 
+    margin: 5px 0;
+}
+.acc-searchList ul li.hide {
+    display: none; 
+  
+}
+.acc-searchList ul li img  {width: 230px; height: 180px; }
+.acc-searchList .acc-searchContent {flex: 1 1;
+    display: flex;
+    flex-direction: column;
+    vertical-align: top;
+    padding:0 30px 
+}
+.acc-searchList .acc-searchContent li  {display: flex; justify-content: space-between; padding: 1px 0;}
+.acc-searchList .acc-searchContent li .acc-txt20 {font-weight: 500; font-size: 20px;}
+.acc-searchList .acc-searchContent li .acc-greytxt {color: #191919; font-size: 14px; margin-bottom: 30px; }
+.acc-searchList .acc-searchContent li .acc-greytxtSmall {color: #A7A7A7; font-size: 14px; }
+.acc-searchList .acc-searchContent li .freeCancel {border-radius: 10px; background-color: #82A1EC; color: #fff; padding: 3px 5px; font-size: 12px; margin-bottom: 0px;}
+
+.acc-starFilter ,.acc-priceFilter, .acc-filter3 {font-size: 16px; border-top: 1px dotted #E5E5E5; margin-bottom: 30px;}
+.acc-starFilter h3 ,.acc-priceFilter h3, .acc-filter3 h3 {margin: 10px 0; font-weight: 500;}
+.acc-starFilter h3 ,.acc-priceFilter h3, .acc-filter3 div { margin: 15px 0;}
+em { font-size: 14px; margin: 5px 0; color: #A7A7A7;}
+.acc-priceFilter input{
+    
+}
+input[type='checkbox']{
+    appearance: none;
+    border: 1px solid #82A1EC;
+    width: 15px;
+    height: 15px;
+    position: relative;
+    line-height: 2;
+    text-align: center;
+}
+input[type='checkbox']:checked:after {
+    content:'';
+    display: block;
+    width: 8px;
+    height: 8px;
+    background-color: #82A1EC;
+    position: absolute;
+    left: 1.8px;
+    top: 1.5px;
+    line-height: 2;
+    text-align: center;
+}
+
+input[type="date"] ,input{
+    position: relative;
+    text-align: center;
+    width: 150px;
+    height: 50px;
+    border: 1px solid #E5E5E5;
+    background: #fff;
+}
+
+input[type="date"]::-webkit-clear-button,
+input[type="date"]::-webkit-inner-spin-button { display: none;}
+input[type="date"]::-webkit-calendar-picker-indicator {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    color: transparent;
+    cursor: pointer;
+}
+input[type="date"]::before{
+    content: "날짜를 입력해주세요";
+    width: 100%;
+}
+ input[type="date"]:valid::before{
+    display: none;
+}
+input[data-placeholder]::before{
+    font-size: 14px;
+    color: #000;
+}

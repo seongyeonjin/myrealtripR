@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>회원 가입 : 마이 리얼 트립</title>
+        <meta name="description" content="html5의 구조를 설명" />
+        <meta name="keywords" content="html5의 구조" />
+        <meta name="author" content="홍길동" />
+
+        <!-- <meta property="og:url" content="사이트url" /> -->
+        <meta property="og:title" content="제목" />
+        <!-- <meta property="og:type" content="website" /> -->
+        <meta property="og:image" content="이미지경로" />
+        <meta property="og:description" content="간단설명" />
+        <link rel="shortcut icon" href="images/main-join/favicon.png" />
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css" />
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/common.css" />
+        <link rel="stylesheet" href="css/main.css" />
+        <link rel="stylesheet" href="css/join.css" />
+
+    </head>
+    <body>
+        <!-- div#wrap>header#header>div.inner^section#visual+main#container.main>section#content>div.con-box.con$*4>div.inner>h2{타이틀$}^^^^footer#footer>div.inner>h2{로고} -->
+        <p id="skipNav"><a href="#">본문바로가기</a></p>
+        <div id="wrap">
+            <!-- header -->
+            <header id="header"></header>
+
+            <section id="subVisual" class="sub1">
+                <h2>회원가입</h2>
+            </section>
+
+            <main class="join">
+                <section id="content">
+                <div class="inner">
+                    
+                <form action="">
+                    <div class="ttop">
+                        <strong>회원 정보 입력</strong>
+                        <span>(<b>*</b>는 필수 입력 정보)</span>
+                    </div>
+                            <table>
+                                <colgroup>
+                                <col class="w1">
+                                <col class="w2">
+                                </colgroup>
+
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <label for="name">성명 <b>*</b></label>
+                                        </td>
+                                        <td>
+                                            <input type="text" placeholder="김현진"
+                                            class="w180">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label for="date">생년월일 <b>*</b></label>
+                                        </td>
+                                        <td>
+                                            <input type="text" placeholder="1996.05.15"
+                                            class="w180"><span class="rad1"> 
+                                            <input type="radio" name="date" id="date1">
+                                            <label for="date">양력</label>
+                                            <input type="radio" name="date" id="date2">
+                                            <label for="date">음력</label>
+                                        </span> </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            성별 <b>*</b>
+                                        </td>
+                                        <td>
+                                            <input type="radio" name="gender" id="gender1"> 
+                                            <label for="rad1">남자</label>
+                                            <input type="radio" name="gender" id="gender2">
+                                            <label for="rad2">여자</label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label for="id">아이디 <b>*</b></label>
+                                        </td>
+                                        <td>
+                                           
+                                            <input type="text" id="id" placeholder="아이디" class="w180">
+                                            <button class="chk"><i class="xi-check-min">중복확인</i></button>
+                
+                                            <span class="s1"> 8~16자리를 입력해야 합니다.</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label for="pawd">비밀번호 <b>*</b></label>
+                                        </td>
+                                        <td>
+                                            <input type="password" id="pawd" placeholder="비밀번호" class="w340">
+                                            <span class="s1"> 영문대소문자,숫자,특수문자( ! @ # $ % ^ & * )만 사용가능합니다.</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label for="pawd">비밀번호 확인 <b>*</b></label>
+                                        </td>
+                                        <td>
+                                            <input type="password" id="pawd" placeholder="비밀번호 재입력"
+                                            class="w340">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label for="add">주소 <b>*</b></label>
+                                        </td>
+                                        <td class="jointd">                                            
+                                            <input type="text" id="add" placeholder="우편번호" class="khj1">
+                                            <input type="button" onclick="khj()" value="우편번호 찾기" class="khj2">
+                                            <input type="text" id="nomaladd" placeholder="주소" class="w1030">
+                                            <input type="text" id="detailadd" placeholder="상세주소" class="w1030">
+                                            
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label for="text">연락처 <b>*</b></label>
+                                        </td>
+                                        <td>
+                                            <select name="text" id="text" class="w150">
+                                                <option>010</option>
+                                                <option>011</option>
+                                                <option>017</option>
+                                            </select>
+                                            <input type="text" id="number" placeholder="6543" class="w150"> 
+                                            <input type="text" id="number" placeholder="9118" class="w150">
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label for="email">이메일 <b>*</b></label>
+                                        </td>
+                                        <td>
+                                            <input type="email" id="email" placeholder="kh32100@naver.com" class="w450">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td >
+                                            <label for="rad">이메일 수신여부</label>
+                                        </td>
+                                        <td>
+                                            <input type="radio" name="email" id="email1">
+                                            <label for="rad1">예</label>
+                                            <input type="radio" name="email" id="email2">
+                                            <label for="rad2">아니오</label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label for="SNS">SNS 수신여부</label>
+                                        </td>
+                                        <td>
+                                            <input type="radio" name="SNS" id="SNS1">
+                                            <label for="rad1">예</label>
+                                            <input type="radio" name="SNS" id="SNS2">
+                                            <label for="rad2">아니오</label> 
+                                        
+                                            <ul>개인정보보호법 제77조 제10항에 따라 &lt;마케팅 활용에 관한 동의&gt;를 받고자 합니다.</ul>          
+                                                <li>1. 수집목적 : 여행 일정, 여행 안내, 이벤트, 할인안내 동의 다양한 정보 제공</li>
+                                                <li>2. 보유기간 : 개인정보 보유기간 만료시까지, 동의 유지기간 동안.</li>
+                                                <li>3. 이용항목 : 휴대폰 번호, 이메일 주소 (동의사항에 한함)</li>
+                                                <li>4. 동의거부시 불이익 : 고객은 동의를 거부할 권리가 있으며,<br> 동의하지 않으실 경우 수집목적에 따른 이벤트 할인안내 등의 정보를 제공받을 수 없습니다.</li>
+                                            </ul>
+                                        </td>
+                                    </tr> 
+                                </tbody>
+                            </table>
+
+                          
+                        
+                        <div class="join77">
+                            <button onclick="location.href='index.html'" class="btn1">가입하기</button>
+                            <button onclick="history.back()" class="btn2">뒤로가기</button>
+
+                           
+                        </div>
+
+                    
+                </div>
+            </section>
+            </main>
+
+            <!-- footer -->
+            <footer id="footer"></footer>
+        </div>
+
+        <script src="js/common.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/join.js"></script>
+        <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+    </body>
+</html>
